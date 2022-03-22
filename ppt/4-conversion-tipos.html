@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Conversion de Tipos - Introducción Programación Ruby</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/theme/blood.min.css" integrity="sha512-rW57Zu9aMzwqAo5AyPqx9AcN+r1JawUBBFxt5RcJS23sh1kX3KeXJYsDBTZbeV2f11jHCoyW5zmnBChL4LFxxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-separator="---" data-markdown data-line-numbers>
+    				<textarea data-template>
+## [Introducción a la Programación en Ruby](#)
+### Conversión entre tipos de datos 
+[Santiago Neira ](#)
+---
+## [¿Qué son las conversiones de tipos?](#)
+- En nuestro código muchas veces necesitamos [convertir](#) nuestras [variables](#) a un tipo de dato específico para lograr los algoritmos
+
+- Ejemplo: cuando recibimos datos como parámetros desde la [consola](#), vienen como [Strings](#), pero a veces necesitamos hacer [cálculos aritméticos](#) sobre ellos
+---
+## [Métodos para Conversión](#)
+```ruby[] 
+123.5.to_s    # "123.5" convierne el número a string 
+String(123.5) # "123.5" también convierte a string 
+
+"123.5".to_i  # 123 convierte de string a número entero 
+"500".to_i    # 500 convierte de string a número entero 
+
+"6.9".to_f    # 6.9 convierte de string a número con decimales 
+Float("6.9")  # 6.9 convierte de string a número con decimales 
+```
+---
+## [Ejemplo](#)
+Si tenemos un programa que calcula el radio según el diámetro:
+
+```bash
+PS C:> calcular-radio.rb 100
+Si el diámetro es 100 el radio es 50.
+```
+El código sería algo así:
+```ruby[] 
+# ARGV es un array que contiene los argumentos 
+# escritos en la consola 
+diametroTexto   = ARGV[0] 
+diametro        = diametroTexto.to_i # convierte un String a Número 
+radio           = diametro / 2
+puts "Si el diámetro es #{diametro} el radio es #{radio}."
+```
+
+				    </textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.js" integrity="sha512-m6ShsCUzCQmgDHleTy2FbuzCPKnSOOypMBALE6LT/q858WxkGMJLajB5Obw+BT8C3mIIoBfEM5F+G5/Eemixfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/notes/notes.min.js" integrity="sha512-1D/hQT/6yIzQICAQCvGWV1x+85VZFQGZGcRE3P7f1/5b8bk3dvbaiOF2lLENEqr6lYQ0NZataWohlZQvblyxcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/markdown/markdown.min.js" integrity="sha512-QAU7Ux8iEB53koLKFCtddfFp0D1+uQWoX3ROnRDLeiE98XHOkMciaup0Spc014jQAuJaqz8VjUZdBqriheI4Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/highlight/highlight.min.js" integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
