@@ -26,6 +26,7 @@
 - operadores de comparación 
 - if elsif else 
 - ternary operator 
+- unless 
 - case  
 ---
 ## [Operadores de Comparación](#)
@@ -107,6 +108,48 @@ Ejemplo:
 usuarioActivo       = true 
 usuarioActivoTexto  = usuarioActivo ? "SI":"NO"
 ```
+---
+## [unless](#)
+```ruby
+unless expression then 
+	ruby code ...
+else 
+	ruby code ...
+end 
+```
+Ejemplo:
+```ruby
+unless diaSemana == "Domingo" then
+	puts "Trabaja, trabaja esclavo!!!!"
+else # si es Domingo
+	puts "Descansa"
+end 
+```
+---
+## [case](#)
+```ruby
+case expression
+	when match1
+		ruby code ...
+	when match2
+		ruby code ...
+	else
+		ruby code ...
+end 
+```
+Ejemplo:
+```ruby
+case diaSemana
+	when "Domingo"
+		puts "Descansa!!!"
+	when "Sábado"
+		puts "Ya casiii!!!"
+	else
+		puts "Trabaja!!!!"
+end 
+```
+---
+## [Ejercicio](#)
 				    </textarea>
 				</section>
 			</div>
