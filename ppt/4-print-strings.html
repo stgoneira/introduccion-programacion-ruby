@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Tipos de Datos - Introducción Programación Ruby</title>
+		<title>Prints y Strings - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,72 +19,49 @@
 				<section data-separator="---" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Tipos de Datos
+### Prints y Strings 
 [Santiago Neira ](#)
 ---
-## [Tipos de Datos](#)
+## [Concatenar Strings](#)
 
 ```ruby[] 
-puts "Cadena de texto".class    # String 
-puts true.class                 # TrueClass
-puts false.class                # FalseClass
-puts 100.class                  # Integer 
-puts 10.class.superclass        # Numeric
-puts 6.9.class                  # Float 
-puts nil.class                  # NilClass
-puts [1,2,3].class              # Array
-puts ["uno", "dos"].class       # Array
-soyUnHash = {"uno" => "one", "dos" => "two"}
-puts soyUnHash.class            # Hash 
+nombre  = "Santiago"
+edad    = 34.to_s
+puts "Mi nombre es " + nombre + " y tengo " + edad + " años." 
+
+# otra forma de hacerlo 
+puts "Mi nombre es ".concat(nombre).concat(" y tengo ").concat(edad).concat(" años.")
 ```
 ---
-## [Variables](#)
-- Las variables son usadas para [almacenar datos](#)
-- Sus valores [pueden ir cambiando](#) dependiendo las instrucciones dadas 
-- En Ruby necesita de una [valor inicial](#) para su creación 
-```ruby[]
-nombre  = "Juan Ramírez" 
-edad    = 30 
-nombre  = "Juan Ramírez Soto"
-```
----
-## [Constantes](#)
-- Van escritas en [MAYUSCULAS](#)
-- Ruby detecta que es una constante si cumple la condición anterior 
-- Igualmente permite que se reasigne un valor, pero emitirá un [WARNING](#) 
-```ruby
-irb(main)> SALUDO = "Hola"
-=> "hola"
-irb(main)> SALUDO = "Hello"
-(irb):2: warning: already initialized constant SALUDO 
-(irb):1: warning: previous definition of SALUDO was here 
-```
----
-## [Operadores Aritméticos](#)
-```ruby
-10 + 15 # suma  = 25
-10 - 5  # resta = 5
-10 * 5  # multiplicacion = 50 
-10 / 5  # division = 2
-10 % 3  # modulo = 1
-2 ** 3  # potencia = 8
-```
----
-## [Operadores de Asignación](#)
+## [print y puts](#)
 ```ruby[] 
-num1 = 10     # asignación normal
-num2 = 20     # asignación normal
-num1 += num2  # igual a num1 = num1 + num2 
-num1 -= num2  # igual a num1 = num1 - num2
-num1 /= num2  # igual a num1 = num1 / num2
-num1 *= num2  # igual a num1 = num1 * num2
-num1 %= num2  # igual a num1 = num1 % num2
-num1 **= num2 # igual a num1 = num1 ** num2
+# puts coloca al final un salto de línea \n
+puts "primera línea" 
+puts "segunda línea"
+
+# por el otro lado print no coloca un salto de línea
+print "primera línea"
+print "sigo en la primera línea"
 ```
 ---
-## [Ejercicio](#)
-Calcule el ***radio*** y el ***perímetro*** de un círculo considerando que su diámetro es de 65cm.
-Utilice variable(s), constante(s), operadores y el método puts en su solución.
+## [interpolación de variables](#)
+```ruby[] 
+nombre 	= "Santiago"
+edad 	= 34
+puts "Mi nombre es #{nombre} y tengo #{edad} años." 
+```
+---
+## [printf y sprintf](#)
+```ruby[] 
+temperatura = 10.55
+ciudad 		= "Santiago"
+# imprime en pantalla el string formateado 
+printf "Hay %.1f grados en la ciudad de %s", temperatura, ciudad 
+# devuelve el string formateado a una variable 
+variableStr = sprintf "Hay %.1f grados en la ciudad de %s", temperatura, ciudad 
+```
+---
+
 				    </textarea>
 				</section>
 			</div>
