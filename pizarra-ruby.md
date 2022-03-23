@@ -1,8 +1,43 @@
 Introducción a Ruby
 ====================
-
+Miércoles
 2022-03-23
 
+## Ejercicios 
+
+### Ejercicio 1 Fahrenheit a Celcius
+15 minutos 
+9:25 a 9:40hrs
+
+### Ejercicio 2 Celcius a Fahrenheit
+
+### Ejercicio 3 Perímetro Círculo
+
+
+## Breaks 
+BREAK de 10:35 hasta 10:50hrs 
+
+BREAK de 12:04 hasta 12:19 hrs 
+
+## Para hoy 
+
+- Prints y Strings 
+- Conversión de tipos de datos 
+- CLI Args 
+
+## Reactivación clase anterior 
+
+- Instalación de Ruby 
+- Instalamos:
+	* VS Code 
+	* Atom 
+- Variables 
+- Constantes 
+- Tipos de datos 
+- Operadores Aritméticos 
+- Operadores de Asignación 
+- IRB
+- Ejercicio para calcular el radio y el perímetro 
 
 
 /////////////////////////////////////////////////////////////

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Conversion de Tipos - Introducción Programación Ruby</title>
+		<title>Ejercicios - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,81 +19,28 @@
 				<section data-separator="---" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Conversión entre tipos de datos 
+### Ejercicios
 [Santiago Neira ](#)
 ---
-## [¿Qué son las conversiones de tipos?](#)
-- En nuestro código muchas veces necesitamos [convertir](#) nuestras [variables](#) a un tipo de dato específico para lograr los algoritmos
+## [Hola Mundo Internacional](#)
+Desarrolle un programa en Ruby que reciba como argumentos desde la consola su nombre y el lenguaje en que desea ser saludado.
 
-- Ejemplo: cuando recibimos datos como parámetros desde la [consola](#), vienen como [Strings](#), pero a veces necesitamos hacer [cálculos aritméticos](#) sobre ellos
----
-## [Métodos para Conversión](#)
-```ruby[] 
-123.5.to_s    # "123.5" convierne el número a string 
-String(123.5) # "123.5" también convierte a string 
-
-"123.5".to_i  # 123 convierte de string a número entero 
-"500".to_i    # 500 convierte de string a número entero 
-
-"6.9".to_f    # 6.9 convierte de string a número con decimales 
-Float("6.9")  # 6.9 convierte de string a número con decimales 
-```
----
-## [Ejemplo](#)
-Si tenemos un programa que calcula el radio según el diámetro:
-
-```bash
-PS C:> calcular-radio.rb 100
-Si el diámetro es 100 el radio es 50.
-```
-El código sería algo así:
-```ruby[] 
-# ARGV es un array que contiene los argumentos 
-# escritos en la consola 
-diametroTexto   = ARGV[0] 
-diametro        = diametroTexto.to_i # convierte un String a Número 
-radio           = diametro / 2
-puts "Si el diámetro es #{diametro} el radio es #{radio}."
-```
----
-## [Ejercicio](#)
-
-Desarrolle un programa que permita transformar los grados Fahrenheit a Celcius.
+Se solicita soportar al menos 3 lenguajes.
 
 Ejemplo:
-```bash 
-convertir-fahrenheit-a-celcius.rb 50
-50.00 grados Fahrenheit son equivalentes a 10.00 grados Celsius.
 
-convertir-fahrenheit-a-celcius.rb 90
-90.00 grados Fahrenheit son equivalentes a 32.22 grados Celsius.
-```
+
 ---
-## [Ejercicio 2](#)
+## [Variables](#)
 
-Desarrolle un programa que permita transformar los grados Celcius a Fahrenheit.
-
-Ejemplo:
-```bash 
-convertir-celcius-a-fahrenheit.rb 10
-10.00 grados Fahrenheit son equivalentes a 50.00 grados Celsius.
-
-convertir-celcius-a-fahrenheit.rb 90
-90.00 grados Fahrenheit son equivalentes a 194.00 grados Celsius.
-```
 ---
-## [Ejercicio 3](#)
+## [Constantes](#)
 
-Desarrolle un programa que calcule el perímetro de un circulo según el radio (argumento entregado al momento de la ejecución).
+---
+## [Operadores Aritméticos](#)
 
-Ejemplo:
-```bash 
-calcular-perimetro.rb 10
-El círculo tiene un perímetro de 31.42.
-
-calcular-perimetro.rb 20
-El círculo tiene un perímetro de 62.83.
-```
+---
+## [Operadores de Asignación](#)
 				    </textarea>
 				</section>
 			</div>
