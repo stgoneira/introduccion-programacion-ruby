@@ -42,19 +42,46 @@
          # 1 si el 1ero es mayor 
 		 # y -1 si el 2do es mayor.
 ```
+---
+## [Operadores de Comparación](#)
+
+```ruby
+edad = 34 # variable para ejemplos 
+
+edad == 34 # retorna true (verdadero)
+edad == 40 # retorna false (falso)
+
+edad < 40 # retorna true (verdadero)
+edad > 40 # retorna false (falso)
+edad >= 30 # retorna true (verdadero)
+edad <= 30 # retorna false (falso)
+
+edad <=> 34 # retorna 0 si son iguales, 
+edad <=> 30 # 1 si el 1ero es mayor 
+edad <=> 40 # y -1 si el 2do es mayor.
+```
 
 ---
 ## [sintaxis if](#)
 
 ```ruby
-if expresion then 
+# then es opcional
+if expresion [then]
 	ruby code ... 
 end 
 ```
 Ejemplo:
 ```ruby
-if 10 < 20 then 
-	puts "10 es menor que 20"
+saldo = 50000
+if saldo < 100000 then 
+	puts "Preocúpese"
+end 
+```
+
+```ruby
+# igual funciona sin el then 
+if saldo < 100000 
+	puts "Preocúpese"
 end 
 ```
 ---
@@ -69,10 +96,11 @@ end
 ```
 Ejemplo:
 ```ruby
-if 10 < 20 then # then es opcional colocarlo 
-	puts "10 es menor que 20"
+saldo = 50000
+if saldo < 100000 then 
+	puts "Preocúpese"
 else 
-	puts "10 NO es menor que 20"
+	puts "Tranquilo, todo bien!"
 end 
 ```
 ---
@@ -81,9 +109,9 @@ end
 ```ruby
 if expresion [then] 
 	ruby code ... 
-elsif expresion [then]
+elsif expresion [then] # pueden aparecer 0 ó más elsif 
 	ruby code ... 
-else
+else # el bloque else es opcional 
 	ruby code ...
 end 
 ```
@@ -94,6 +122,8 @@ if hoy == "Lunes"
 	puts "Lentejas"
 elsif hoy == "Miercoles"
 	puts "Arroz con huevo"
+elsif hoy == "Jueves"
+	puts "Tortilla de papas"
 else 
 	puts "Fideos con salsa"
 end 
@@ -111,7 +141,7 @@ usuarioActivoTexto  = usuarioActivo ? "SI":"NO"
 ---
 ## [unless](#)
 ```ruby
-unless expression then 
+unless expression [then] 
 	ruby code ...
 else 
 	ruby code ...
@@ -119,6 +149,7 @@ end
 ```
 Ejemplo:
 ```ruby
+# es como decir si no es Domingo 
 unless diaSemana == "Domingo" then
 	puts "Trabaja, trabaja esclavo!!!!"
 else # si es Domingo
@@ -149,19 +180,24 @@ case diaSemana
 end 
 ```
 ---
-## [Ejercicio](#)
+## [Ejercicio 1 - i18n](#)
 
-Desarrolle un programa que permita transformar de grados Fahrenheit a Celcius o viceversa.
+Desarrolle un programa que muestre el saludo en al menos 3 idiomas o formas según país. Recibe como argumento de ejecución la palabra help o el nombre del lenguaje o país. Si recibe help muestra la ayuda sino el saludo. Ejemplo:
 
-Se espera algo como esto:
 ```bash 
-convertir-temperatura.rb 50 f
-50.00 grados Fahrenheit son equivalentes a 10.00 grados Celsius.
+saludo.rb chile
+hola, cómo estay?
 ```
 
 ```bash 
-convertir-temperatura.rb 10 c
-10.00 grados Celcius son equivalentes a 50.00 grados Fahrenheit.
+saludo.rb help
+Ayuda: Se utiliza saludo.rb [país]. 
+Donde país puede ser: chile, argentina o brasil.
+```
+
+```bash 
+saludo.rb argentina 
+che, cómo va?
 ```
 
 				    </textarea>

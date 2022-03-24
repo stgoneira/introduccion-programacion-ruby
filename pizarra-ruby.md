@@ -1,5 +1,22 @@
-Introducción a Ruby
-====================
+# Introducción a Ruby
+======================
+
+Jueves 
+2022-03-23 
+
+## Para hoy 
+- Estructuras condicionales 
+- Loops 
+
+## Reactivación clase anterior 
+
+
+## Ejercicios 
+
+
+
+////////////////////////////////////////////////////
+
 Miércoles
 2022-03-23
 
@@ -40,7 +57,7 @@ BREAK de 12:04 hasta 12:19 hrs
 - Ejercicio para calcular el radio y el perímetro 
 
 
-/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////
 
 2022-03-22
 
