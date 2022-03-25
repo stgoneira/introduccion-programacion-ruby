@@ -9,11 +9,27 @@ Jueves
 - Loops 
 
 ## Reactivación clase anterior 
-
+- ARGV - Argumentos desde la consola 
+- Cambiar entre tipos de datos (casting) 
+- Distintos métodos para imprimir en pantalla 
 
 ## Ejercicios 
 
+### Ejercicio 1 - Par o impar 
 
+Me avisan cuando terminen.
+Tiempo aprox. para resolver 10 a 15 minutos.
+10:40 a 11:15 hrs 
+
+### Ejercicio 2 - Internacionalización 
+
+Tiempo aprox. para resolver 15 a 20 minutos.
+11:23 a 11:42 hrs 
+
+## BREAKS 
+
+- BREAK 1 de 9:55 hasta 10:10 hrs
+- BREAK 2 de 12:00 hasta 12:15 hrs
 
 ////////////////////////////////////////////////////
 

@@ -25,19 +25,110 @@
 ## [Loops](#)
 
 ```ruby[] 
-
+# con variables 
+desde = 1 
+hasta = 5 
+desde.upto(hasta) { |numero|
+	puts "numero = #{numero}"
+}
 ```
----
-## [Variables](#)
+
+```ruby[] 
+# con literales 
+1.upto(5) { |numero|
+	puts "numero = #{numero}"
+}
+```
+
+```ruby[] 
+# el bloque también lo puedo hacer
+# con do y end en vez de llaves ({})
+1.upto(5) do |numero|
+	puts "numero = #{numero}"
+end 
+```
+
 
 ---
-## [Constantes](#)
+## [Loops](#)
+
+```ruby[] 
+# Ejemplo con variables
+desde = 10 
+hasta = 50 
+incrementos = 10 
+
+desde.step(hasta, incrementos) { |numero|
+	puts "numero = #{numero}"
+}
+```
+
+```ruby[] 
+# Ejemplo con literales 
+10.step(50, 10) { |numero|
+	puts "numero = #{numero}"
+}
+```
 
 ---
-## [Operadores Aritméticos](#)
+## [Loops](#)
+
+```ruby[] 
+# Ejemplo con variables
+desde = 10 
+hasta = 0 
+incrementos = -2  
+
+desde.step(hasta, incrementos) { |numero|
+	puts "numero = #{numero}"
+}
+```
 
 ---
-## [Operadores de Asignación](#)
+## [Loops con Arrays](#)
+
+```ruby[] 
+# Array con nombres de 3 personas 
+personas = ["Juanito", "Pedrito", "Ramoncito"]
+
+personas.each do |persona|
+	puts "Hola #{persona}"
+end 
+```
+
+```ruby[] 
+# puedo extraer el índice del array y 
+# tambien el valor 
+personas.each_with_index do |persona, indice|
+	puts "#{indice}.- #{persona}"
+end 
+```
+
+---
+## [Ejercicio 1 - Áreas](#)
+Calcule y muestre en consola las áreas de 100 rectángulos donde la altura se mantiene permanente en 10cm, la base comienza en 1cm y se incrementa de 2 en 2. Ejemplo: 
+
+```bash 
+calcular-areas.rb 
+Rectángulo 1 - base 1cm y altura 10cm tiene un área de 10cm cuadrados. 
+Rectángulo 2 - base 3cm y altura 10cm tiene un área de 30cm cuadrados. 
+Rectángulo 3 - base 5cm y altura 10cm tiene un área de 50cm cuadrados. 
+.... 
+```
+
+---
+## [Ejercicio 2 - Pares e Impares](#)
+Desarrolle un programa que muestre X números pares o impares según se especifique por parámetro. El número desde el cual se debe comenzar también viene por parámetro. Ejemplo: 
+
+```bash 
+generador-pares-impares.rb par 100 5 
+Generando 5 números pares desde el 100:
+100
+102
+104
+106
+108
+```
 				    </textarea>
 				</section>
 			</div>

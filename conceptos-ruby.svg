@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="conceptos-ruby.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74653479"
+     inkscape:cx="-126.58486"
+     inkscape:cy="452.08878"
+     inkscape:window-width="1708"
+     inkscape:window-height="881"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#808000;stroke-width:0.373476"
+       id="rect31"
+       width="159.84128"
+       height="59.187347"
+       x="19.847254"
+       y="35.795944" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="27.644388"
+       y="50.681381"
+       id="text885"><tspan
+         sodipodi:role="line"
+         id="tspan883"
+         style="stroke-width:0.264583"
+         x="27.644388"
+         y="50.681381">Ruby en limpio</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke-width:0.362123"
+       id="rect2165"
+       width="64.503578"
+       height="31.188543"
+       x="26.22673"
+       y="59.541763" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="30.479713"
+       y="76.553696"
+       id="text3261"><tspan
+         sodipodi:role="line"
+         id="tspan3259"
+         style="stroke-width:0.264583"
+         x="30.479713"
+         y="76.553696">Intérprete</tspan></text>
+    <rect
+       style="fill:#800080;stroke-width:0.264583"
+       id="rect3563"
+       width="47.846062"
+       height="30.834127"
+       x="98.527451"
+       y="58.832935" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="113.7673"
+       y="77.616943"
+       id="text4813"><tspan
+         sodipodi:role="line"
+         id="tspan4811"
+         style="stroke-width:0.264583"
+         x="113.7673"
+         y="77.616943">API</tspan></text>
+    <rect
+       style="fill:#800080;stroke-width:0.264583"
+       id="rect5433"
+       width="163.38544"
+       height="52.453461"
+       x="17.720762"
+       y="110.93198" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="78.680191"
+       y="141.05728"
+       id="text6581"><tspan
+         sodipodi:role="line"
+         id="tspan6579"
+         style="fill:#ffffff;stroke-width:0.264583"
+         x="78.680191"
+         y="141.05728">Gemas</tspan></text>
+    <rect
+       style="fill:#ff7f2a;stroke-width:0.283923"
+       id="rect7033"
+       width="59.541767"
+       height="17.141123"
+       x="116.24822"
+       y="42.400642" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="138.93079"
+       y="53.516705"
+       id="text8213"><tspan
+         sodipodi:role="line"
+         id="tspan8211"
+         style="stroke-width:0.264583"
+         x="138.93079"
+         y="53.516705">IRB</tspan></text>
+    <rect
+       style="fill:#ff7f2a;stroke-width:0.328444"
+       id="rect8779"
+       width="66.630074"
+       height="51.035797"
+       x="-70.528641"
+       y="44.30191" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-64.14917"
+       y="74.781624"
+       id="text9743"><tspan
+         sodipodi:role="line"
+         id="tspan9741"
+         style="stroke-width:0.264583"
+         x="-64.14917"
+         y="74.781624">archivo.rb</tspan></text>
+    <path
+       style="fill:#ff7f2a;stroke-width:0.264583"
+       id="path10419"
+       d="m -8.4873218,63.397256 c 4.7689918,1.988849 9.5504336,3.929557 14.4615835,5.54046 3.4298397,1.203978 7.0230513,1.783482 10.5334433,2.676109 3.097464,0.907818 6.171678,1.884268 9.301444,2.676801 1.848887,0.454345 3.687077,0.944025 5.560631,1.287414 0,0 3.194672,-2.237163 3.194672,-2.237163 v 0 C 32.679444,73.023504 30.835663,72.526564 28.971409,72.108948 25.826688,71.339656 22.726281,70.419502 19.632937,69.465186 19.067778,69.307894 18.507886,69.130266 17.937458,68.993307 17.452528,68.876875 16.958101,68.804268 16.469251,68.705584 13.965402,68.200126 11.470473,67.640382 9.0366116,66.855739 4.1655663,65.307392 -0.61896664,63.49848 -5.211083,61.241606 c 0,0 -3.2762388,2.15565 -3.2762388,2.15565 z" />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="rect10523"
+       width="55.6432"
+       height="60.250599"
+       x="-167.28401"
+       y="30.834129" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-155.23389"
+       y="51.744629"
+       id="text11773"><tspan
+         sodipodi:role="line"
+         id="tspan11771"
+         style="fill:#ffffff;stroke-width:0.264583"
+         x="-155.23389"
+         y="51.744629">IDE</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;stroke-width:0.264583"
+         x="-155.23389"
+         y="64.973755"
+         id="tspan11775">o</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;stroke-width:0.264583"
+         x="-155.23389"
+         y="78.202881"
+         id="tspan11779">Editor</tspan></text>
+    <path
+       style="fill:#2b0000;stroke-width:0.264583"
+       id="path12112"
+       d="m -116.55154,61.113106 c 5.92548,1.061238 11.83749,2.178383 17.78911,3.093812 4.890807,0.773954 9.822794,1.182204 14.766745,1.38225 2.29149,0.08252 4.584261,0.09291 6.876817,0.07285 2.189829,-0.02664 4.379878,-0.02432 6.569824,-0.02154 0,0 3.12089,-2.26817 3.12089,-2.26817 v 0 c -2.185855,0.0093 -4.37175,0.02029 -6.557624,0.01122 -2.311955,5.29e-4 -4.624133,0.04019 -6.935853,-0.01209 -4.993826,-0.133019 -9.97888,-0.494514 -14.925194,-1.216821 -5.876645,-0.869688 -11.709325,-1.945259 -17.493355,-3.305778 0,0 -3.21136,2.264275 -3.21136,2.264275 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-166.57518"
+       y="112.34964"
+       id="text13439"><tspan
+         sodipodi:role="line"
+         id="tspan13437"
+         style="stroke-width:0.264583"
+         x="-166.57518"
+         y="112.34964">notepad</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="-166.57518"
+         y="125.57877"
+         id="tspan13507">notepad++</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="-166.57518"
+         y="138.80789"
+         id="tspan13509">VS Code</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="-166.57518"
+         y="152.03702"
+         id="tspan13511">Atom</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="-166.57518"
+         y="165.26614"
+         id="tspan13513">Sublime</tspan></text>
+  </g>
+</svg>
