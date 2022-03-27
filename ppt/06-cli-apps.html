@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>CLI Args - Introducción Programación Ruby</title>
+		<title>CLI Apps - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,18 +16,30 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="---" data-separator-vertical="===" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Argumentos Consola 
+### Aplicaciones en Consolas (CLI)
+
 [Santiago Neira ](#)
+
+---
+## [Aplicaciones de Consola](#)
+
+- Existen 2 formas para el desarrollo de aplicaciones en interfaces de consola (CLI) 
+	* CLI Args (ARGV[] array) <!-- .element: style="color: green;" -->
+	* Consolas interactivas (Kernel::gets()) <!-- .element: style="color: aqua;" -->
+- ¿Por qué escoger una u otra?
+- Scripts automatizados, Intervención humana, CRON, muchas opciones, distintos caminos, etc, etc.
+
 ---
 ## [¿Qué son los CLI Args?](#)
 - Son los argumentos que vienen de la ejecución del programa desde la [consola](#) 
 - Nos permiten ejecutar el programa de manera [dinámica](#) 
 - Es decir, si queremos efectuar [cálculos u operaciones](#) con [valores](#) que vienen desde [fuera del código](#)
----
-## [Ejemplo](#)
+
+===
+## [Ejemplo CLI Args](#)
 Si tenemos un programa que calcula el radio según el diámetro:
 
 ```bash
@@ -37,13 +49,45 @@ Si el diámetro es 100 el radio es 50.
 El código sería algo así:
 ```ruby[] 
 # ARGV es un array que contiene los argumentos 
-# escritos en la consola 
-diametroTexto   = ARGV[0] 
-diametro        = diametroTexto.to_i # convierte un String a Número 
+# escritos en la consola al momento de ejecutar 
+diametroTexto   = ARGV[0] # índice 0 es el 1er argumento 
+# el método to_i() convierte un String a Número Entero 
+diametro        = diametroTexto.to_i 
 radio           = diametro / 2
 puts "Si el diámetro es #{diametro} el radio es #{radio}."
 ```
 
+---
+## [Consolas Interactivas](#)
+
+- Ideales para [interacción](#) con [humanos](#) 
+- Donde hay [mucho ingreso de datos](#)
+- Y/o se pueden dar [distintos caminos](#) de ejecución
+===
+## [Ejemplo Consolas Interactiva](#)
+```ruby[1-4|5-8|10-14]  
+puts "¿En qué idioma desea ser saludado?"
+puts "a) Inglés"
+puts "b) Español"
+puts "Por favor seleccione una de las opciones:"
+# recupera la información ingresada por el usuario
+opcionUsuario = gets().chomp() 
+# el método chomp() elimina ciertos caracteres 
+# que no nos interesan del final del string 
+
+if opcionUsuario == "a" then
+	puts "Hello, nice to meet you" 
+else 
+	puts "Hola tío, joder!!!"
+end 
+```
+
+--- 
+## [Referencias](#)
+
+- https://docs.ruby-lang.org/en/3.1/Kernel.html#method-i-gets
+
+- https://docs.ruby-lang.org/en/3.1/String.html#method-i-chomp
 				    </textarea>
 				</section>
 			</div>

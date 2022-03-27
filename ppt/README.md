@@ -6,7 +6,7 @@
 - [03-variables-tipos-datos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/03-variables-tipos-datos.html) 
 - [04-print-strings.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/04-print-strings.html) 
 - [05-conversion-tipos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/05-conversion-tipos.html) 
-- [06-cli-args.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/06-cli-args.html) 
+- [06-cli-apps.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/06-cli-apps.html) 
 - [07-estrucuras-condicionales.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/07-estrucuras-condicionales.html) 
 - [08-loops.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/08-loops.html) 
 - [09-metodos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/09-metodos.html) 
