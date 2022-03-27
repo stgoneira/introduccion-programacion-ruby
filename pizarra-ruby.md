@@ -1,8 +1,34 @@
 # Introducción a Ruby
 ======================
 
+Viernes 
+2022-03-25  
+
+BREAK de 10:40 a 10:55
+
+## Para hoy 
+
+- Debugging 
+- Loops o bucles 
+
+## Reactivación clase anterior 
+
+
+## Ejercicios 
+
+### Ejercicio 1 - Bucle de Áreas de Rectángulos 
+
+Tiempo aprox: 15 - 20 minutos 
+Desde: 11:30 - 11:50 revisión 
+
+### Ejercicio 2 - Pares e Impares c/ params 
+
+Tiempo aprox: 15 - 20 minutos 
+
+
+////////////////////////////////////////////////////
 Jueves 
-2022-03-23 
+2022-03-24 
 
 ## Para hoy 
 - Estructuras condicionales 

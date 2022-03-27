@@ -115,19 +115,19 @@
        id="rect7033"
        width="59.541767"
        height="17.141123"
-       x="116.24822"
-       y="42.400642" />
+       x="120.14677"
+       y="35.795944" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="138.93079"
-       y="53.516705"
+       x="142.12053"
+       y="47.846062"
        id="text8213"><tspan
          sodipodi:role="line"
          id="tspan8211"
          style="stroke-width:0.264583"
-         x="138.93079"
-         y="53.516705">IRB</tspan></text>
+         x="142.12053"
+         y="47.846062">IRB</tspan></text>
     <rect
        style="fill:#ff7f2a;stroke-width:0.328444"
        id="rect8779"
@@ -213,5 +213,27 @@
          x="-166.57518"
          y="165.26614"
          id="tspan13513">Sublime</tspan></text>
+    <g
+       id="g1262"
+       transform="translate(11.695703,6.7338924)">
+      <rect
+         style="fill:#2b0000;stroke-width:0.264583"
+         id="rect59"
+         width="63.085918"
+         height="26.581144"
+         x="8.1515512"
+         y="2.480907" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="12.404533"
+         y="18.78401"
+         id="text919"><tspan
+           sodipodi:role="line"
+           id="tspan917"
+           style="fill:#ffffff;stroke-width:0.264583"
+           x="12.404533"
+           y="18.78401">debugger</tspan></text>
+    </g>
   </g>
 </svg>
