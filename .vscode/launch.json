@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Local File",
-            "type": "Ruby",
+            "type": "rdbg",
+            "name": "Debug current file with rdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/codigo/loops.rb"
+            "script": "${file}",
+            "args": [],
+            "askParameters": true
+        },
+        {
+            "type": "rdbg",
+            "name": "Attach with rdbg",
+            "request": "attach"
         }
     ]
 }
