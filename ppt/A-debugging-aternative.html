@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>CLI Args - Introducción Programación Ruby</title>
+		<title>Debugging - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,30 +19,37 @@
 				<section data-separator="---" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Argumentos Consola 
-[Santiago Neira ](#)
----
-## [¿Qué son los CLI Args?](#)
-- Son los argumentos que vienen de la ejecución del programa desde la [consola](#) 
-- Nos permiten ejecutar el programa de manera [dinámica](#) 
-- Es decir, si queremos efectuar [cálculos u operaciones](#) con [valores](#) que vienen desde [fuera del código](#)
----
-## [Ejemplo](#)
-Si tenemos un programa que calcula el radio según el diámetro:
+### Debugging con https://github.com/ruby/debug
 
-```bash
-PS C:> calcular-radio.rb 100
-Si el diámetro es 100 el radio es 50.
+Santiago Neira 
+
+
+---
+## [Debugger Alternativo](#)
+
+1. Gemas necesarias:
+```bash 
+gem install debug 
 ```
-El código sería algo así:
+2. En VSCode instale la extensión ["VSCode rdbg Ruby Debugger"](#)
+
+---
+## [Proyecto de Ejemplo](#)
+1. Crear una carpeta vacía para el proyecto, por ej. prueba 
+2. Abrir la carpeta en VS Code 
+3. Agregar un archivo al proyecto llamado ***prueba.rb***
+3. Colocar el siguiente código: 
 ```ruby[] 
-# ARGV es un array que contiene los argumentos 
-# escritos en la consola 
-diametroTexto   = ARGV[0] 
-diametro        = diametroTexto.to_i # convierte un String a Número 
-radio           = diametro / 2
-puts "Si el diámetro es #{diametro} el radio es #{radio}."
+saludo = "Hola Mundo"
+puts saludo 
 ```
+
+
+---
+## [Configuración para Debugging](#)
+1. Nos vamos a editar el archivo ***prueba.rb*** y agregamos un ***breakpoint*** en la línea 1
+2. Finalmente presionamos F5 o el botón "Start Debugging"
+3. Podemos avanzar línea a línea utilizando los botones o con F11 
 
 				    </textarea>
 				</section>

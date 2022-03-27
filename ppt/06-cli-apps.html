@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>CLI Apps - Introducción Programación Ruby</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/theme/blood.min.css" integrity="sha512-rW57Zu9aMzwqAo5AyPqx9AcN+r1JawUBBFxt5RcJS23sh1kX3KeXJYsDBTZbeV2f11jHCoyW5zmnBChL4LFxxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-separator="---" data-separator-vertical="===" data-markdown data-line-numbers>
+    				<textarea data-template>
+## [Introducción a la Programación en Ruby](#)
+### Aplicaciones en Consolas (CLI)
+
+[Santiago Neira ](#)
+
+---
+## [Aplicaciones de Consola](#)
+
+- Existen 2 formas para el desarrollo de aplicaciones en interfaces de consola (CLI) 
+	* CLI Args (ARGV[] array) <!-- .element: style="color: green;" -->
+	* Consolas interactivas (Kernel::gets()) <!-- .element: style="color: aqua;" -->
+- ¿Por qué escoger una u otra?
+- Scripts automatizados, Intervención humana, CRON, muchas opciones, distintos caminos, etc, etc.
+
+---
+## [¿Qué son los CLI Args?](#)
+- Son los argumentos que vienen de la ejecución del programa desde la [consola](#) 
+- Nos permiten ejecutar el programa de manera [dinámica](#) 
+- Es decir, si queremos efectuar [cálculos u operaciones](#) con [valores](#) que vienen desde [fuera del código](#)
+
+===
+## [Ejemplo CLI Args](#)
+Si tenemos un programa que calcula el radio según el diámetro:
+
+```bash
+PS C:> calcular-radio.rb 100
+Si el diámetro es 100 el radio es 50.
+```
+El código sería algo así:
+```ruby[] 
+# ARGV es un array que contiene los argumentos 
+# escritos en la consola al momento de ejecutar 
+diametroTexto   = ARGV[0] # índice 0 es el 1er argumento 
+# el método to_i() convierte un String a Número Entero 
+diametro        = diametroTexto.to_i 
+radio           = diametro / 2
+puts "Si el diámetro es #{diametro} el radio es #{radio}."
+```
+
+---
+## [Consolas Interactivas](#)
+
+- Ideales para [interacción](#) con [humanos](#) 
+- Donde hay [mucho ingreso de datos](#)
+- Y/o se pueden dar [distintos caminos](#) de ejecución
+
+===
+## [Ejemplo Consola Interactiva](#)
+```ruby[1-4|5-8|10-14]  
+puts "¿En qué idioma desea ser saludado?"
+puts "a) Inglés"
+puts "b) Español"
+puts "Por favor seleccione una de las opciones:"
+# recupera la información ingresada por el usuario
+opcionUsuario = gets().chomp() 
+# el método chomp() elimina ciertos caracteres 
+# que no nos interesan del final del string 
+
+if opcionUsuario == "a" then
+	puts "Hello, nice to meet you" 
+else 
+	puts "Hola tío, joder!!!"
+end 
+```
+
+===
+## [Ejemplo Ficha Veterinaria](#)
+```ruby[]  
+puts "¿Nombre mascota?"
+nombreMascotaCrudo = gets() # ejemplo: "Rocky\n" 
+nombreMascota      = nombreMascotaCrudo.chomp() # "Rocky" 
+
+puts "¿Nombre Tutor?"
+nombreTutorMascota = gets().chomp() 
+
+puts "¿Edad Mascota?"
+edad = gets().chomp().to_i # casteo a número entero 
+
+puts "¿Síntomas o Problemas de la Mascota?"
+sintomasMascota = gets().chomp() 
+
+print "El tutor es #{nombreTutorMascota} y "
+print "su mascota se llama #{nombreMascota}, " 
+puts "tiene #{edad} años. "
+puts "Tiene los siguientes síntomas: #{sintomasMascota}"
+```
+
+===
+## [Actividad](#)
+Pruebe los ejemplos en su computador, se [recomienda](#):
+
+- Ejecutar con [debugger](#) y ver estados de variables 
+- Cambiar nombres a [variables](#) para ver que pasa 
+- Cambiar mensajes 
+- [Consultar](#) todas sus dudas 
+
+Tiempo estimado: [10 minutos](#) 
+
+--- 
+## [Referencias](#)
+
+- https://docs.ruby-lang.org/en/3.1/Kernel.html#method-i-gets
+
+- https://docs.ruby-lang.org/en/3.1/String.html#method-i-chomp
+
+--- 
+## [Ejercicios](#)
+
+=== 
+## [Ejercicio 1](#)
+
+Desarrolle 2 programas para calcular el perímetro de un triángulo.
+1. CLI Args <!-- .element: style="color: green;" -->
+2. Consola Interactiva <!-- .element: style="color: aqua;" -->
+
+Tiempo esperado: 15 minutos 
+
+=== 
+## [Ejercicio 1 - Ayuda](#)
+
+`$$ P = a + b + c $$`
+
+- donde:
+	* P = Perímetro 
+	* a = Lado 1
+	* b = Base 
+	* c = Lado 2 
+
+=== 
+## [Ejercicio 2 - Registro Cliente](#)
+
+Construya una aplicación que recupere y registre en variables los datos de un cliente. Seleccione la [interfaz CLI](#) más apropiada.
+
+[Contexto:](#) un punto de venta de un supermercado.
+
+Los datos a solicitar son: RUT, nombre, edad, email 
+
+Tiempo esperado: [10 minutos](#)
+
+Note: Ver ejemplo en la diapositiva sgte. 
+
+=== 
+## [Ejercicio 2](#)
+
+```bash 
+REGISTRO CLIENTES NUEVOS
+//////////////////////////
+
+Por favor ingrese el RUT del nuevo cliente:
+
+Por favor ingrese su nombre completo: 
+
+Por favor ingrese su edad: 
+
+Por favor ingrese su email: 
+
+Los datos ingresados son:
+RUT: 12345678-5 
+Nombre: Juanito Perez 
+Edad: 54 
+Email: juanito@hotmail.com 
+```
+
+				    </textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.js" integrity="sha512-m6ShsCUzCQmgDHleTy2FbuzCPKnSOOypMBALE6LT/q858WxkGMJLajB5Obw+BT8C3mIIoBfEM5F+G5/Eemixfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/notes/notes.min.js" integrity="sha512-1D/hQT/6yIzQICAQCvGWV1x+85VZFQGZGcRE3P7f1/5b8bk3dvbaiOF2lLENEqr6lYQ0NZataWohlZQvblyxcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/markdown/markdown.min.js" integrity="sha512-QAU7Ux8iEB53koLKFCtddfFp0D1+uQWoX3ROnRDLeiE98XHOkMciaup0Spc014jQAuJaqz8VjUZdBqriheI4Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/highlight/highlight.min.js" integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<!-- plugin notación matemática -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/math/math.min.js" integrity="sha512-8eviRBLZHoiXLqXeMl5XurkjNEGizTI8DHbSUoGxkYFd4RslHpIYTEQmLYtWUemc5FfMYOkPDFUcQKefPLjF7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
