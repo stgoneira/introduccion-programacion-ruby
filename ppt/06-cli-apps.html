@@ -63,8 +63,9 @@ puts "Si el diámetro es #{diametro} el radio es #{radio}."
 - Ideales para [interacción](#) con [humanos](#) 
 - Donde hay [mucho ingreso de datos](#)
 - Y/o se pueden dar [distintos caminos](#) de ejecución
+
 ===
-## [Ejemplo Consolas Interactiva](#)
+## [Ejemplo Consola Interactiva](#)
 ```ruby[1-4|5-8|10-14]  
 puts "¿En qué idioma desea ser saludado?"
 puts "a) Inglés"
@@ -82,12 +83,104 @@ else
 end 
 ```
 
+===
+## [Ejemplo Ficha Veterinaria](#)
+```ruby[]  
+puts "¿Nombre mascota?"
+nombreMascotaCrudo = gets() # ejemplo: "Rocky\n" 
+nombreMascota      = nombreMascotaCrudo.chomp() # "Rocky" 
+
+puts "¿Nombre Tutor?"
+nombreTutorMascota = gets().chomp() 
+
+puts "¿Edad Mascota?"
+edad = gets().chomp().to_i # casteo a número entero 
+
+puts "¿Síntomas o Problemas de la Mascota?"
+sintomasMascota = gets().chomp() 
+
+print "El tutor es #{nombreTutorMascota} y "
+print "su mascota se llama #{nombreMascota}, " 
+puts "tiene #{edad} años. "
+puts "Tiene los siguientes síntomas: #{sintomasMascota}"
+```
+
+===
+## [Actividad](#)
+Pruebe los ejemplos en su computador, se [recomienda](#):
+
+- Ejecutar con [debugger](#) y ver estados de variables 
+- Cambiar nombres a [variables](#) para ver que pasa 
+- Cambiar mensajes 
+- [Consultar](#) todas sus dudas 
+
+Tiempo estimado: [10 minutos](#) 
+
 --- 
 ## [Referencias](#)
 
 - https://docs.ruby-lang.org/en/3.1/Kernel.html#method-i-gets
 
 - https://docs.ruby-lang.org/en/3.1/String.html#method-i-chomp
+
+--- 
+## [Ejercicios](#)
+
+=== 
+## [Ejercicio 1](#)
+
+Desarrolle 2 programas para calcular el perímetro de un triángulo.
+1. CLI Args <!-- .element: style="color: green;" -->
+2. Consola Interactiva <!-- .element: style="color: aqua;" -->
+
+Tiempo esperado: 15 minutos 
+
+=== 
+## [Ejercicio 1 - Ayuda](#)
+
+`$$ P = a + b + c $$`
+
+- donde:
+	* P = Perímetro 
+	* a = Lado 1
+	* b = Base 
+	* c = Lado 2 
+
+=== 
+## [Ejercicio 2 - Registro Cliente](#)
+
+Construya una aplicación que recupere y registre en variables los datos de un cliente. Seleccione la [interfaz CLI](#) más apropiada.
+
+[Contexto:](#) un punto de venta de un supermercado.
+
+Los datos a solicitar son: RUT, nombre, edad, email 
+
+Tiempo esperado: [10 minutos](#)
+
+Note: Ver ejemplo en la diapositiva sgte. 
+
+=== 
+## [Ejercicio 2](#)
+
+```bash 
+REGISTRO CLIENTES NUEVOS
+//////////////////////////
+
+Por favor ingrese el RUT del nuevo cliente:
+
+Por favor ingrese su nombre completo: 
+
+Por favor ingrese su edad: 
+
+Por favor ingrese su email: 
+
+Los datos ingresados son:
+RUT: 12345678-5 
+Nombre: Juanito Perez 
+Edad: 54 
+Email: juanito@hotmail.com 
+```
+
 				    </textarea>
 				</section>
 			</div>
@@ -99,6 +192,10 @@ end
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/markdown/markdown.min.js" integrity="sha512-QAU7Ux8iEB53koLKFCtddfFp0D1+uQWoX3ROnRDLeiE98XHOkMciaup0Spc014jQAuJaqz8VjUZdBqriheI4Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/highlight/highlight.min.js" integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<!-- plugin notación matemática -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/plugin/math/math.min.js" integrity="sha512-8eviRBLZHoiXLqXeMl5XurkjNEGizTI8DHbSUoGxkYFd4RslHpIYTEQmLYtWUemc5FfMYOkPDFUcQKefPLjF7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -107,7 +204,7 @@ end
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
 		</script>
 	</body>
