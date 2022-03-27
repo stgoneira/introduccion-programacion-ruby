@@ -1,11 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="800" height="600">
-   <rect x="10" y="10" width="600" height="300" fill="yellow" stroke="black"  style="stroke-width:1;" />
-   <text x="50" y="70" fill="black" style="font-size:3em;">Ruby</text>
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+   <style>
+      rect {
+         stroke: black;
+         stroke-width: 1;
+         fill: #C2BB00;         
+      }
 
-   <rect x="500" y="10" width="200" height="100" fill="brown" stroke="black"  style="stroke-width:1;" />
-   <text x="520" y="70" fill="white" style="font-size:3em;">Intérprete</text>
+      text {
+         font-size: 2.5em;
+         font-weight: bold;
+      }
+
+      .text-small {
+         font-size: 1em;
+      }
+
+      .text-medium {
+         font-size: 2em;
+      }
+
+      .text-big {
+         font-size: 3em;
+      }
+
+      .fill-white {fill: white;}
+      .fill-black {fill: black;}
+      .fill-blue {fill: #003547;}
+      .fill-green {fill: #005E54;}
+      .fill-yellow {fill: #C2BB00;}
+      .fill-red {fill: #E1523D;}
+      .fill-orange {fill: #ED8B16;}
+      .fill-aqua {fill: aqua;}
+   </style>
+
+   <g id="so-group">
+      <rect id="so" rx="15" x="0" y="0" width="1200" height="600" />
+      <text id="so-text" x="50" y="70" width="300" class="fill-black text-medium">
+         <tspan x="20" y="50">Sistema Operativo </tspan>
+         <tspan x="20" y="100">(Windows, Linux, Mac u otro)</tspan>
+      </text>
+   </g>
+
+   <g id="terminal-group">
+      <rect id="terminal" rx="15" x="20" y="250" width="300" height="350" class="fill-black" />
+      <text id="terminal-text" class="fill-white">
+         <tspan x="30" y="300">PowerShell </tspan>
+         <tspan x="30" y="350">CMD</tspan>
+         <tspan x="30" y="400">Bash</tspan>
+         <tspan x="30" y="450">Zsh</tspan>
+      </text>
+   </g>
    
-   <rect x="500" y="10" width="200" height="100" fill="brown" stroke="black"  style="stroke-width:1;" />
-   <text x="520" y="70" fill="white" style="font-size:3em;">Intérprete</text>
+   <g id="ruby-group">
+      <rect id="ruby" rx="15" x="500" y="0" width="300" height="500" class="fill-red" />
+      <text id="ruby-text" x="520" y="40" class="fill-white">Ruby</text>
+   </g>
+
+   <g id="interprete-group">
+      <rect id="interprete" rx="15" x="650" y="60" width="250" height="100" class="fill-blue" />
+      <text id="interprete-text" x="680" y="120" class="fill-white">Intérprete</text>
+   </g>
+
+   <g id="debugger-group">
+      <rect id="debugger" rx="15" x="650" y="180" width="250" height="100" class="fill-green" />
+      <text id="debugger-text" x="680" y="240" class="fill-white">Debugger</text>
+   </g>
+
+   <g id="irb-group">
+      <rect id="irb" rx="15" x="650" y="300" width="250" height="100" class="fill-orange" />
+      <text id="irb-text" x="680" y="360" class="fill-white">IRB</text>
+   </g>
+
+   <g id="api-group">
+      <rect id="api" rx="15" x="510" y="60" width="100" height="340" class="fill-aqua" />
+      <text id="api" x="520" y="150" class="fill-black">API</text>
+   </g>
+
+   <g id="codigo-ruby-group">
+      <rect id="codigo-ruby" x="930" y="60" width="250" height="230" class="fill-white" />
+      <text id="codigo-ruby-text" x="940" y="100" class="fill-black">archivo.rb</text>
+   </g>
 </svg>
