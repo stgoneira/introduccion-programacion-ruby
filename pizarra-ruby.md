@@ -1,5 +1,58 @@
-# Introducción a Ruby
-======================
+# INTRODUCCION A RUBY 
+
+
+Lunes 
+2022-03-28 
+
+## Contenidos Vistos y Por Revisar 
+
+[x] ¿Por qué crear software?
+
+[x] Instalación Ruby 
+
+[x] Conceptos: Lenguaje Programación, Editores, Intérpretes, APIs, Librerías 
+
+[x] Utilización de Consola (CMD o PowerShell) 
+
+[x] Instalación de Editores de Código o IDEs
+
+[x] String y concatenaciones
+
+[x] Funciones para mostrar mensajes en consola (print, put, etc)
+
+[x] Cómo agregar comentarios en el código 
+
+[x] Instalación y uso de un Debugger 
+
+[X] Tipos de Datos y Conversión entre tipos 
+
+[X] Operadores de Asignación, Operadores Matemáticos y Operadores de Comparación 
+
+[] Operadores Lógicos 
+
+[X] Estructuras Condicionales 
+
+[X] Estructuras de Bucles 
+
+[] Apps de Consola 
+
+[] Profundización sobre Arrays 
+
+[] Hashes 
+
+[] Métodos  
+
+[] Alcance de variables 
+
+[] Programación Orientada a Objetos 
+
+[] Gemas 
+
+[] Trabajo con archivos 
+
+[] Llamada APIs
+
+////////////////////////////////////////////////////
 
 Jueves 
 2022-03-23 
