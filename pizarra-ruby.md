@@ -3,6 +3,22 @@
 Lunes 
 2022-03-28 
 
+## Actividad 
+Copie el código de ejemplo de Consola Interactiva y ejecútelo.
+Luego cambie los nombres de variables y las opciones para probar una pregunta nueva.
+Recomendación: agregue una 3ra opción.
+
+Tiempo aprox: 7 minutos 
+Desde: 11:19 hasta 11:26hrs 
+
+Objetivo: Levantar dudas de sintaxis u orden del código. 
+
+## Breaks 
+
+BREAK desde 10:20 a 10:35 
+
+BREAK desde 12:00 a 12:15 
+
 ## Para hoy 
 
 - Repaso completo 
