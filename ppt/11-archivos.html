@@ -16,7 +16,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="---" data-separator-vertical="===" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
 ### Trabajo con Archivos 
@@ -25,10 +25,133 @@
 ---
 ## [Trabajo con Archivos](#)
 
+- Como en la gran mayoría de los lenguajes, Ruby, tiene una [API](#) para el manejo de los [archivos](#)
+
+- Está disponible sin la necesidad de instalar ninguna [Gema](#) o librería adicional 
+
+- Para escribir archivos complejos como un [DOCX](#), si necesitaremos una Gema que nos haga el trabajo más fácil
+
+---
+## [Listar Directorios](#)
 ```ruby[] 
+archivosCarpetaActual    = Dir.entries(".") 
+archivosUnaCarpetaArriba = Dir.entries("..") 
+# debo ocupar doble backslash para escapar
+archivosEnCarpUsers      = Dir.entries("c:\\Users") 
+# ruby también me permite usar slash para la ruta 
+archivosEnCarpUsers      = Dir.entries("c:/Users") 
+# array de resultado de ejecutar la línea 3: 
+# [".",
+# "..",
+# "All Users",
+# "Default",
+# "Default User",
+# "desktop.ini",
+# "Public",
+# "Santiago"]
+```
+
+===
+## [Listar Directorios](#)
+¿Qué pasa si queremos crear un archivo en la carpeta del usuario que corre la aplicación de manera dinámica?
+```ruby[] 
+# existe una constante global llamada ENV 
+# que tiene muchos datos útiles 
+# este hash tiene una clave HOME 
+# que representa la carpeta del usuario  
+carpetaUsuario         = ENV["HOME"]
+# ejemplo si yo ejecuto en Windows sería 
+# carpetaUsuario = "C:/Users/Santiago"
+
+archivosCarpetaUsuario = Dir.entries( carpetaUsuario )
 
 ```
 
+===
+## [Actividad 1](#)
+Cree 3 programas:
+1. Uno que liste los archivos y carpetas de su directorio actual
+2. Otro que liste los archivos que están en la carpeta "Windows Media Player" que está dentro de "Program Files"
+3. Y uno que liste los archivos de la carpeta del usuario de manera dinámica, es decir, si le pasa su código a su compañero debería ejecutar correctamente. Valide con algún compañero(a).
+
+Tiempo aprox: 15 minutos
+---
+## [Escribir Archivos](#)
+```ruby[] 
+# EJEMPLO: crear archivo Markdown de manera dinámica con el listado de presentaciones del curso. 
+
+# array con presentaciones
+presentaciones = ["basico.ppt", "medio.ppt", "avanzado.ppt"]
+# archivo a escribir 
+nombreArchivo = "README.md"
+
+# abro archivo en modo escritura "w" de write 
+File.open(nombreArchivo, "w") do |archivo|
+	archivo.write "# Presentaciones Curso\n\n"
+	
+	presentaciones.each_with_index do |ppt, indice|
+		indiceHumano = indice + 1 
+		f.write "#{indiceHumano}. #{ppt}"
+	end 
+end 
+```
+
+===
+## [Resultado README.md](#)
+
+```markdown 
+# Presentaciones Curso
+
+1. basico.ppt
+2. medio.ppt
+3. avanzado.ppt
+```
+
+===
+## [Actividad 2](#)
+
+Cree un programa que escriba un archivo TXT con el listado de archivos de su carpeta de usuario. Cada archivo debe ir en una línea distinta. El archivo debe tener un título que diga "MIS ARCHIVOS". 
+
+Tiempo estimado: 15 minutos 
+
+--- 
+## [Archivos DOCX](#)
+- Vamos a necesitar una gema llamada "caracal"
+
+- La gema nos facilitará el trabajo de escritura de este tipo de archivos 
+
+- La documentación oficial del proyecto se encuentra en: https://github.com/urvin-compliance/caracal 
+
+```bash 
+gem install caracal  
+```
+
+=== 
+## [Código](#)
+```ruby[] 
+require 'caracal' # importamos la gema 
+
+presentaciones = ["basico.ppt", "medio.ppt", "avanzado.ppt"]
+nombreArchivo = "README.docx"
+
+Caracal::Document.save( nombreArchivo ) do |docx|
+	docx.h1 "Presentaciones Curso" # imprime el titulo 
+	docx.p # imprime un párrafo vacío para espacio 
+
+	# recorre el array de las presentaciones 
+	presentaciones.each_with_index do |ppt, indice|
+		indiceHumano = indice + 1 
+		# genera un párrafo por cada presentación 
+		docx.p indiceHumano.to_s + ".- " + ppt 	
+	end 
+end 
+```
+===
+## [Actividad 3](#)
+
+Cree un programa que escriba un archivo DOCX con el listado de archivos de su carpeta de usuario. Cada archivo debe ir en una línea distinta. El archivo debe tener un título que diga "MIS ARCHIVOS". 
+
+Tiempo estimado: 15 minutos 
 				    </textarea>
 				</section>
 			</div>

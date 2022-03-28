@@ -3,6 +3,14 @@
 Lunes 
 2022-03-28 
 
+## Para hoy 
+
+- Repaso completo 
+- Conceptos: Intérprete, Debugger, IRB, Shell, CLI, Software, Lenguaje, IDE, Editor, etc. 
+- Operadores Lógicos 
+- Apps Interactivas por CLI 
+- Escritura de Archivos 
+
 ## Contenidos Vistos y Por Revisar 
 
 [x] ¿Por qué crear software?
