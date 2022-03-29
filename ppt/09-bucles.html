@@ -16,7 +16,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="---" data-separator-vertical="^===$" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
 ### Bucles o Loops 
@@ -124,6 +124,40 @@ loop do
 	puts "contador = #{contador}"
 	break if contador == 10 
 	contador += 1 
+end
+```
+
+===
+## [Receta Menu Interactivo](#) 
+```ruby[] 
+OPCION_PRODUCTO_A = "a"
+OPCION_PRODUCTO_B = "b"
+OPCION_PRODUCTO_C = "c"
+OPCION_SALIR      = "d"
+
+opcionSeleccionada = "a"
+
+loop do 
+    puts "\nAGREGAR AL CARRO\n============\n"
+    puts "a) Chicle"
+    puts "b) Revista"
+    puts "c) Jugo Natural"
+    puts "d) SALIR"
+    puts "Por favor seleccione una opción:"
+    opcionSeleccionada = gets().chomp() 
+
+    case opcionSeleccionada
+        when OPCION_PRODUCTO_A
+            puts "gracias por agregar un chicle!!"
+        when OPCION_PRODUCTO_B
+            puts "gracias por agregar una revista!!"
+        when OPCION_PRODUCTO_C
+            puts "gracias por agregar un jugo!!"
+        when OPCION_SALIR
+            break # para salir de la app (del loop do)
+        else 
+            puts "opción no reconocida intente nuevamente"
+    end
 end
 ```
 

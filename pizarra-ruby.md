@@ -2,6 +2,15 @@
 Martes
 2022-03-29
 
+## Avances Ejercicio Módulo 
+Conversión temperatura escrito en DOCX - M6_Ejercicio.docx 
+
+Desde 11:55 hasta 12:15hrs 
+
+## Breaks 
+
+1. Desde 10:34 hasta 10:49 hrs
+
 ## Para hoy 
 - Trabajo con archivos 
 - Gemas 
