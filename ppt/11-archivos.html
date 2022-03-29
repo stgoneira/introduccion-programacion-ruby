@@ -91,7 +91,7 @@ File.open(nombreArchivo, "w") do |archivo|
 	
 	presentaciones.each_with_index do |ppt, indice|
 		indiceHumano = indice + 1 
-		f.write "#{indiceHumano}. #{ppt}"
+		archivo.write "#{indiceHumano}. #{ppt}"
 	end 
 end 
 ```
