@@ -14,7 +14,7 @@ Desde el 22 de Marzo hasta el 04 de Abril.
 - [06-conversion-tipos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/06-conversion-tipos.html) 
 - [07-cli-apps.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/07-cli-apps.html) 
 - [08-estrucuras-condicionales.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/08-estrucuras-condicionales.html) 
-- [09-loops.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/09-loops.html) 
+- [09-bucles.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/09-bucles.html) 
 - [10-fechas.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/10-fechas.html) 
 - [11-archivos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/11-archivos.html) 
 - [12-arrays.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/12-arrays.html) 

@@ -1,31 +1,17 @@
 # INTRODUCCION A RUBY 
-
-Lunes 
-2022-03-28 
-
-## Actividad 
-Copie el código de ejemplo de Consola Interactiva y ejecútelo.
-Luego cambie los nombres de variables y las opciones para probar una pregunta nueva.
-Recomendación: agregue una 3ra opción.
-
-Tiempo aprox: 7 minutos 
-Desde: 11:19 hasta 11:26hrs 
-
-Objetivo: Levantar dudas de sintaxis u orden del código. 
-
-## Breaks 
-
-BREAK desde 10:20 a 10:35 
-
-BREAK desde 12:00 a 12:15 
+Martes
+2022-03-29
 
 ## Para hoy 
+- Trabajo con archivos 
+- Gemas 
+- Operadores lógicos 
 
-- Repaso completo 
-- Conceptos: Intérprete, Debugger, IRB, Shell, CLI, Software, Lenguaje, IDE, Editor, etc. 
-- Operadores Lógicos 
-- Apps Interactivas por CLI 
-- Escritura de Archivos 
+## Trabajos
+
+1. Evidencia Portafolio Módulo 6 (22-28/03) 
+2. Evidencia Portafolio Módulo 6 (29/03-04/04) 
+3. Evaluación Portafolio Módulo 6 - M6_Ejercicio.docx 
 
 ## Contenidos Vistos y Por Revisar 
 
@@ -57,7 +43,7 @@ BREAK desde 12:00 a 12:15
 
 [X] Estructuras de Bucles 
 
-[] Apps de Consola 
+[X] Apps de Consola 
 
 [] Profundización sobre Arrays 
 
@@ -75,7 +61,35 @@ BREAK desde 12:00 a 12:15
 
 [] Llamada APIs
 
-////////////////////////////////////////////////////
+---------------------
+
+Lunes 
+2022-03-28 
+
+## Actividad 
+Copie el código de ejemplo de Consola Interactiva y ejecútelo.
+Luego cambie los nombres de variables y las opciones para probar una pregunta nueva.
+Recomendación: agregue una 3ra opción.
+
+Tiempo aprox: 7 minutos 
+Desde: 11:19 hasta 11:26hrs 
+
+Objetivo: Levantar dudas de sintaxis u orden del código. 
+
+## Breaks 
+
+1. BREAK desde 10:20 a 10:35 
+2. BREAK desde 12:00 a 12:15 
+
+## Para hoy 
+
+- Repaso completo 
+- Conceptos: Intérprete, Debugger, IRB, Shell, CLI, Software, Lenguaje, IDE, Editor, etc. 
+- Operadores Lógicos 
+- Apps Interactivas por CLI 
+- Escritura de Archivos 
+
+---------------------
 
 Viernes 
 2022-03-25  
@@ -102,7 +116,7 @@ Desde: 11:30 - 11:50 revisión
 Tiempo aprox: 15 - 20 minutos 
 
 
-////////////////////////////////////////////////////
+
 Jueves 
 2022-03-24 
 
@@ -133,7 +147,7 @@ Tiempo aprox. para resolver 15 a 20 minutos.
 - BREAK 1 de 9:55 hasta 10:10 hrs
 - BREAK 2 de 12:00 hasta 12:15 hrs
 
-////////////////////////////////////////////////////
+---------------------
 
 Miércoles
 2022-03-23
