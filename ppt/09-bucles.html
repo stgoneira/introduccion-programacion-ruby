@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Loops - Introducción Programación Ruby</title>
+		<title>Bucles - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,10 +19,11 @@
 				<section data-separator="---" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Loops
+### Bucles o Loops 
 [Santiago Neira ](#)
+
 ---
-## [Loops](#)
+## [upto()](#)
 
 ```ruby[] 
 # con variables 
@@ -50,7 +51,7 @@ end
 
 
 ---
-## [Loops](#)
+## [step()](#)
 
 ```ruby[] 
 # Ejemplo con variables
@@ -71,7 +72,7 @@ desde.step(hasta, incrementos) { |numero|
 ```
 
 ---
-## [Loops](#)
+## [step() - decremento](#)
 
 ```ruby[] 
 # Ejemplo con variables
@@ -102,6 +103,28 @@ end
 personas.each_with_index do |persona, indice|
 	puts "#{indice}.- #{persona}"
 end 
+```
+
+---
+## [While Loop](#) 
+```ruby[] 
+contador = 1 
+hasta    = 10 
+while contador <= 10 do 
+    print "contador=#{contador}\n"
+    contador += 1  
+end 
+```
+
+---
+## [Loop do](#) 
+```ruby[] 
+contador = 1 
+loop do 
+	puts "contador = #{contador}"
+	break if contador == 10 
+	contador += 1 
+end
 ```
 
 ---

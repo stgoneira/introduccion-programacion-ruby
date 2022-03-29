@@ -56,7 +56,7 @@ Martes
 
 [] Programación Orientada a Objetos 
 
-[] Gemas 
+[X] Gemas 
 
 [] Trabajo con archivos 
 
