@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Prints y Strings - Introducción Programación Ruby</title>
+		<title>Strings y Prints - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,12 +16,52 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="^---$" data-separator-vertical="^===$" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Prints y Strings 
+### Strings y Prints 
 [Santiago Neira ](#)
+
 ---
+## [Strings](#)
+
+===
+## [Sintaxis Strings](#)
+
+```ruby[] 
+saludo = "Hola Mundo" # puedo: con comillas dobles 
+saludo = 'Hola Mundo' # y también con comillas simples 
+```
+
+===
+## [Sintaxis Strings Multilínea](#)
+
+```ruby[] 
+# %q<delimitador>
+saludo=%q{
+Hola a todo
+el mundo
+espero estén bien 
+}
+
+saludo2=%q!
+Hola a todo
+el mundo
+espero estén bien 
+!
+
+===
+## [here document syntax](#)
+
+```ruby[]
+saludo3= &lt;&lt;TERMINA_STRING
+Hola a todo
+el mundo
+espero estén bien 
+TERMINA_STRING
+```
+
+===
 ## [Concatenar Strings](#)
 
 ```ruby[] 
@@ -30,9 +70,12 @@ edad    = 34.to_s
 puts "Mi nombre es " + nombre + " y tengo " + edad + " años." 
 
 # otra forma de hacerlo 
-puts "Mi nombre es ".concat(nombre).concat(" y tengo ").concat(edad).concat(" años.")
+puts "Mi nombre es ".concat(nombre).concat(" y tengo ")
+					.concat(edad).concat(" años.")
 ```
 ---
+## [print methods](#)
+===
 ## [print y puts](#)
 ```ruby[] 
 # puts coloca al final un salto de línea \n
@@ -43,14 +86,15 @@ puts "segunda línea"
 print "primera línea"
 print "sigo en la primera línea"
 ```
----
+===
 ## [interpolación de variables](#)
 ```ruby[] 
 nombre 	= "Santiago"
 edad 	= 34
 puts "Mi nombre es #{nombre} y tengo #{edad} años." 
 ```
----
+
+===
 ## [printf y sprintf](#)
 ```ruby[] 
 temperatura = 10.55
@@ -60,8 +104,45 @@ printf "Hay %.1f grados en la ciudad de %s", temperatura, ciudad
 # devuelve el string formateado a una variable 
 variableStr = sprintf "Hay %.1f grados en la ciudad de %s", temperatura, ciudad 
 ```
----
 
+---
+## [string escape](#)
+
+===
+## [Comillas Dobles](#)
+|Secuencia|Descripción|
+|---------|-----------|
+|\\"       | comillas dobles |
+|\a       | sonido sistema  |
+|\b       | espacio atrás   | 
+|\r       | retorno carro   | 
+|\n       | salto línea     |
+|\s       | espacio         |
+|\t       | tab             |
+
+===
+## [Ejemplos: Comillas Dobles](#)
+```ruby[] 
+comillaDoble = "\"" # "
+unBackslash  = "\\" # \  
+bell         = "\a" # sonidoooooooo!!!!!!!!! 
+
+tab = "hola\t\t\tmundo!" # hola			mundo 
+```
+
+===
+## [Comillas Simples](#)
+Solo soporta escapar:
+1. [\\'](#) - una comilla simple 
+2. [\\\\](#) - un backslash 
+
+```ruby[] 
+texto='Bernardo O'higgins fue ...' # error: debo escapar la comilla 
+```
+Solución:
+```ruby[] 
+texto='Bernardo O\'higgins fue ...' # escapo la comilla 
+```
 				    </textarea>
 				</section>
 			</div>

@@ -6,6 +6,7 @@ Martes
 - Trabajo con archivos 
 - Gemas 
 - Operadores lógicos 
+- Strings: Sintaxis adicionales y Escape 
 
 ## Trabajos
 
