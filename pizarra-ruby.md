@@ -7,6 +7,7 @@ Martes
 - Gemas 
 - Operadores lógicos 
 - Strings: Sintaxis adicionales y Escape 
+- while y loop do 
 
 ## Trabajos
 
@@ -86,9 +87,7 @@ Objetivo: Levantar dudas de sintaxis u orden del código.
 
 - Repaso completo 
 - Conceptos: Intérprete, Debugger, IRB, Shell, CLI, Software, Lenguaje, IDE, Editor, etc. 
-- Operadores Lógicos 
 - Apps Interactivas por CLI 
-- Escritura de Archivos 
 
 ---------------------
 
