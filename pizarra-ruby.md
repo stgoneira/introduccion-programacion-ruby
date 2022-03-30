@@ -48,7 +48,7 @@ Desde 11:55 hasta 12:15hrs
 
 [X] Operadores de Asignación, Operadores Matemáticos y Operadores de Comparación 
 
-[] Operadores Lógicos 
+[X] Operadores Lógicos 
 
 [X] Estructuras Condicionales 
 
@@ -68,7 +68,7 @@ Desde 11:55 hasta 12:15hrs
 
 [X] Gemas 
 
-[] Trabajo con archivos 
+[X] Trabajo con archivos 
 
 [] Llamada APIs
 

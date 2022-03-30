@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Strings y Prints - Introducción Programación Ruby</title>
+		<title>Métodos - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,141 +16,145 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="^---$" data-separator-vertical="^===$" data-markdown data-line-numbers>
+				<section data-separator="---" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Strings y Prints 
+### Métodos
+
 [Santiago Neira ](#)
+---
+## [Métodos](#)
+- Nos sirven para [organizar y ordenar](#) nuestro código 
+
+- Son una forma útil de [reutilizar código](#) 
 
 ---
-## [Strings](#)
-
-===
-## [Sintaxis Strings](#)
-
-```ruby[] 
-saludo = "Hola Mundo" # puedo: con comillas dobles 
-saludo = 'Hola Mundo' # y también con comillas simples 
+## [Ejemplo de Método](#)
+Sintaxis: 
+```ruby[]  
+def nombreMetodo 
+	# código ruby aquí 
+end 
 ```
-
-===
-## [Sintaxis Strings Multilínea](#)
-
+Ejemplo:
 ```ruby[] 
-# %q<delimitador>
-saludo=%q{
-Hola a todo
-el mundo
-espero estén bien 
-}
+# declaración método 
+def saludar 
+    puts "Hola a todo el mundo!!!"
+end 
 
-saludo2=%q!
-Hola a todo
-el mundo
-espero estén bien 
-!
-
-===
-## [here document syntax](#)
-
-```ruby[]
-saludo3= &lt;&lt;TERMINA_STRING
-Hola a todo
-el mundo
-espero estén bien 
-TERMINA_STRING
+# en ruby puedo invocar el método
+# con o sin paréntesis
+# en otros lenguajes esto no es posible 
+saludar 
+saludar() 
 ```
-
-===
-## [Concatenar Strings](#)
-
-```ruby[] 
-nombre  = "Santiago"
-edad    = 34.to_s
-puts "Mi nombre es " + nombre + " y tengo " + edad + " años." 
-
-# otra forma de hacerlo 
-puts "Mi nombre es ".concat(nombre).concat(" y tengo ")
-					.concat(edad).concat(" años.")
-```
----
-## [print methods](#)
-===
-## [print y puts](#)
-```ruby[] 
-# puts coloca al final un salto de línea \n
-puts "primera línea" 
-puts "segunda línea"
-
-# por el otro lado print no coloca un salto de línea
-print "primera línea"
-print "sigo en la primera línea"
-```
-===
-## [interpolación de variables](#)
-```ruby[] 
-nombre 	= "Santiago"
-edad 	= 34
-puts "Mi nombre es #{nombre} y tengo #{edad} años." 
-```
-
-===
-## [printf y sprintf](#)
-```ruby[] 
-temperatura = 10.55
-ciudad 		= "Santiago"
-# imprime en pantalla el string formateado 
-printf "Hay %.1f grados en la ciudad de %s", temperatura, ciudad 
-# devuelve el string formateado a una variable 
-variableStr = sprintf "Hay %.1f grados en la ciudad de %s", temperatura, ciudad 
-```
-===
-<!-- .slide: data-background-iframe="https://ruby-doc.org/core-3.1.1/Kernel.html#method-i-sprintf" -->
-## [docs formato](#)
-
-=== 
-## [printf y sprintf](#)
-
-https://ruby-doc.org/core-3.1.1/Kernel.html#method-i-sprintf
 
 ---
-## [string escape](#)
-
-===
-## [Comillas Dobles](#)
-|Secuencia|Descripción|
-|---------|-----------|
-|\\"       | comillas dobles |
-|\a       | sonido sistema  |
-|\b       | espacio atrás   | 
-|\r       | retorno carro   | 
-|\n       | salto línea     |
-|\s       | espacio         |
-|\t       | tab             |
-
-===
-## [Ejemplos: Comillas Dobles](#)
+## [Método con Parámetros o Argumentos](#)
 ```ruby[] 
-comillaDoble = "\"" # "
-unBackslash  = "\\" # \  
-bell         = "\a" # sonidoooooooo!!!!!!!!! 
+def saludar(nombre)
+    puts "hola "+nombre
+end 
 
-tab = "hola\t\t\tmundo!" # hola			mundo 
+nombre = "Juanito Soto"
+
+saludar nombre # puedo invocar así 
+# resultado: "hola Juanito Soto" 
+saludar(nombre) # o también así 
 ```
 
-===
-## [Comillas Simples](#)
-Solo soporta escapar:
-1. [\\'](#) - una comilla simple 
-2. [\\\\](#) - un backslash 
+---
+## [Método con Parámetros o Argumentos](#)
+```ruby[] 
+def saludar(nombre, idioma)
+    if idioma == "español" then
+        puts "hola "+nombre
+    else 
+        puts "hi "+nombre 
+    end 
+end 
 
-```ruby[] 
-texto='Bernardo O'higgins fue ...' # error: debo escapar la comilla 
+nombre = "Juanito Soto"
+idioma = "ingles"
+
+saludar nombre, idioma
+idioma = "español"
+saludar(nombre, idioma)
 ```
-Solución:
+
+---
+## [Valores por defecto](#)
 ```ruby[] 
-texto='Bernardo O\'higgins fue ...' # escapo la comilla 
+def saludar(nombre, idioma = "español")
+    if idioma == "español" then
+        puts "hola "+nombre
+    else 
+        puts "hi "+nombre 
+    end 
+end 
+
+nombre = "Juanito Soto"
+saludar(nombre)
+
+idioma = "ingles"
+saludar(nombre, idioma)
 ```
+
+---
+## [Retornar Valores](#)
+Sintaxis:
+```ruby[] 
+def nombreMetodo
+	return algunValor 
+end 
+```
+
+Ejemplo: 
+```ruby[] 
+def sumar(valor1, valor2)
+	return valor1 + valor2 
+end 
+```
+
+---
+## [Ejemplo2 Retorno](#)
+Ejemplo:
+```ruby[] 
+def calcularPerimetroRectangulo(base, altura)
+	return base*2 + altura*2 
+end 
+
+base      = 10 
+altura    = 5
+perimetro = calcularPerimetroRectangulo(10, 5)
+printf "El perímetro de un rectángulo con base %d y altura %d es de %d", base, altura, perimetro
+```
+
+---
+## [Actividad 1](#)
+
+Desarrolle un programa que calcule el área de un rectángulo y el área de un círculo.
+
+Se requiere que utilice métodos.
+
+[Tiempo esperado:](#) 10 minutos 
+
+---
+## [Actividad 2](#) 
+Desarrolle un programa que calcule el área y el périmetro de un rectángulo o de un círculo con valores ingresados desde una Consola (CLI) Interactiva.
+
+[Tiempo esperado:](#) 15-20 minutos 
+
+---
+## [Actividad 3](#) 
+Desarrolle un programa que me permita conocer los saludos y despedidas en al menos 3 idiomas.
+
+Se requiere:
+1. Menú en Consola Interactiva 
+2. Usar métodos 
+
+[Tiempo esperado:](#) 15-20 minutos 
 				    </textarea>
 				</section>
 			</div>
