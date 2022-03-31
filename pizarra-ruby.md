@@ -1,27 +1,29 @@
 # INTRODUCCION A RUBY
+
 Miércoles 
-2022-03-30
+2022-03-31
 
 ## Actividades 
 
-1. Actividades en PPT de Trabajo con Archivos 
-2. Actividades de PPT de métodos 
-
-## Para hoy 
-
-- Repaso del trabajo con archivos 
-- Métodos 
+1. Diapositiva 3 - Copie el ejemplo de uso de clases en Ruby y ejecute en su computador. Luego haga las modificaciones que estime pertinente en el código y comente o discuta sus dudas. 
 
 ## Breaks 
 
-1. De 09:55 hasta 10:10hrs 
-2. De 11:45 hasta 12:00hrs 
+1. 
+2. 
+
+## Para hoy 
+- Repaso 
+- Programación Orientada a Objetos 
+- Require Keyword 
+- UML 
 
 ## Trabajos
 
-1. Evidencia Portafolio Módulo 6 (22-28/03) 
-2. Evidencia Portafolio Módulo 6 (29/03-04/04) 
-3. Evaluación Portafolio Módulo 6 - M6_Ejercicio.docx 
+1. Evidencia Portafolio Módulo 6 (22-28/03) - Ejercicios en clases 
+2. Evidencia Portafolio Módulo 6 (29/03-04/04) - Ejercicios en clases 
+3. Evaluación Portafolio Módulo 6 - M6_Ejercicio.docx - Conversión Temperatura exportado a .docx 
+
 
 ## Contenidos Vistos y Por Revisar 
 
@@ -70,6 +72,26 @@ Miércoles
 [X] Trabajo con archivos 
 
 [] Llamada APIs en Internet 
+
+--------------------- 
+Miércoles 
+2022-03-30
+
+## Actividades 
+
+1. Actividades en PPT de Trabajo con Archivos 
+2. Actividades de PPT de métodos 
+
+## Para hoy 
+
+- Repaso del trabajo con archivos 
+- Métodos 
+
+## Breaks 
+
+1. De 09:55 hasta 10:10hrs 
+2. De 11:45 hasta 12:00hrs 
+
 --------------------- 
 Martes
 2022-03-29
