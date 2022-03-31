@@ -7,9 +7,13 @@ Miércoles
 
 1. Diapositiva 3 - Copie el ejemplo de uso de clases en Ruby y ejecute en su computador. Luego haga las modificaciones que estime pertinente en el código y comente o discuta sus dudas. 
 
+2. Desarrollo Ejercicio 1 - Diapositiva 4 - PPT Programación Orientada a Objetos 
+
+3. Desarrollo Ejercicio 2 - En clases o para la casa - (Requiere investigación) 
+
 ## Breaks 
 
-1. 
+1. De 10:54 a 11:09
 2. 
 
 ## Para hoy 
@@ -65,7 +69,7 @@ Miércoles
 
 [] Alcance de variables 
 
-[] Programación Orientada a Objetos 
+[X] Programación Orientada a Objetos 
 
 [X] Gemas 
 

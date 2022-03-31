@@ -19,6 +19,7 @@ Desde el 22 de Marzo hasta el 04 de Abril.
 - [11-archivos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/11-archivos.html) 
 - [12-arrays.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/12-arrays.html) 
 - [13-hashes.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/13-hashes.html) 
+- [14-metodos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/14-metodos.html) 
 - [14-orientacion-objetos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/14-orientacion-objetos.html) 
 - [15-consumir-api.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/15-consumir-api.html) 
 - [A-debugging-aternative.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/A-debugging-aternative.html) 
