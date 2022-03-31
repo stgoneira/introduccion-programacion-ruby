@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Loops - Introducción Programación Ruby</title>
+		<title>Programación Orientada a Objetos - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,28 +16,100 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="^---$" data-separator-vertical="^===$" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Loops
+### Programación Orientada a Objetos 
 [Santiago Neira ](#)
+
 ---
-## [Loops](#)
+## [POO](#)
+
+- La Programación Orienda a Objetos (POO) 
+- 
+
+---
+## [Clases](#)
 
 ```ruby[] 
+# SINTAXIS 
+class NombreClase 
+	# constructor 
+	def initialize(arg1, arg2)
+		# variables instancia 
+		# sintaxis con @
+		@arg1 = arg1 
+		@arg2 = arg2 		
+	end 
 
-```
----
-## [Variables](#)
+	# definicion de métodos
+	def nombreMetodo(arg1)
+		# código ruby 
+	end 
+end 
+``` 
+<!-- .element: style="float: left; width: 45%;"-->
 
----
-## [Constantes](#)
+```ruby[] 
+# EJEMPLO  
+class Alumno 
+    def initialize(rut, nombre)                 
+        @rut        = rut 
+		@nombre     = nombre 
+    end 
+    
+    def presentarse 
+        puts "Hola soy #{@nombre}" 
+    end 
 
----
-## [Operadores Aritméticos](#)
+    def decirPresente
+        "Presente teacher!!!"
+    end 
+end 
+``` 
+<!-- .element: style="float: right; width: 50%;"-->
 
----
-## [Operadores de Asignación](#)
+===
+
+## [Clases - Ej. Uso](#)
+
+```ruby[] 
+# Alumno.rb 
+class Alumno 
+    def initialize(rut, nombre)                 
+        @rut        = rut 
+		@nombre     = nombre 
+    end 
+    
+    def presentarse 
+        puts "Hola soy #{@nombre}" 
+    end 
+
+    def decirPresente
+        "Presente teacher!!!"
+    end 
+end 
+``` 
+<!-- .element: style="float: left; width: 40%;"-->
+
+```ruby[] 
+# otroarchivo.rb 
+
+# importa el archivo ruby 
+require './Alumno.rb'
+
+juan = Alumno.new("1234567-9", "Juan Pérez")
+juan.presentarse() 
+# Hola soy Juan Pérez 
+
+rominaSoto = Alumno.new("87654-k", "Romina Soto")
+rominaSoto.presentarse() 
+# Hola soy Romina Soto 
+
+``` 
+<!-- .element: style="float: right; width: 60%;"-->
+
+
 				    </textarea>
 				</section>
 			</div>
