@@ -1,22 +1,21 @@
-# INTRODUCCION A RUBY 
-Martes
-2022-03-29
+# INTRODUCCION A RUBY
+Miércoles 
+2022-03-30
 
-## Avances Ejercicio Módulo 
-Conversión temperatura escrito en DOCX - M6_Ejercicio.docx 
+## Actividades 
 
-Desde 11:55 hasta 12:15hrs 
+1. Actividades en PPT de Trabajo con Archivos 
+2. Actividades de PPT de métodos 
+
+## Para hoy 
+
+- Repaso del trabajo con archivos 
+- Métodos 
 
 ## Breaks 
 
-1. Desde 10:34 hasta 10:49 hrs
-
-## Para hoy 
-- Trabajo con archivos 
-- Gemas 
-- Operadores lógicos 
-- Strings: Sintaxis adicionales y Escape 
-- while y loop do 
+1. De 09:55 hasta 10:10hrs 
+2. De 11:45 hasta 12:00hrs 
 
 ## Trabajos
 
@@ -60,7 +59,7 @@ Desde 11:55 hasta 12:15hrs
 
 [] Hashes 
 
-[] Métodos  
+[X] Métodos  
 
 [] Alcance de variables 
 
@@ -70,7 +69,27 @@ Desde 11:55 hasta 12:15hrs
 
 [X] Trabajo con archivos 
 
-[] Llamada APIs
+[] Llamada APIs en Internet 
+--------------------- 
+Martes
+2022-03-29
+
+## Avances Ejercicio Módulo 
+Conversión temperatura escrito en DOCX - M6_Ejercicio.docx 
+
+Desde 11:55 hasta 12:15hrs 
+
+## Breaks 
+
+1. Desde 10:34 hasta 10:49 hrs
+
+## Para hoy 
+- Trabajo con archivos 
+- Gemas 
+- Operadores lógicos 
+- Strings: Sintaxis adicionales y Escape 
+- while y loop do 
+
 
 ---------------------
 
