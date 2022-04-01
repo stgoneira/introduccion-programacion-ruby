@@ -79,7 +79,14 @@ arreglo[1] = elemento2
 ===
 ## [Recorrer Arrays](#)
 ```ruby[] 
+nombres = [] 
+nombres[0] = "Juan"
+nombres[1] = "Pedro"
+nombres[2] = "Sebastián"
 
+nombres.each do |nombre|
+    puts "Nombre = #{nombre}"
+end 
 ```
 
 ---
@@ -97,7 +104,7 @@ listado = {clave1 => valor1, clave2 => valor2}
 Ejemplo: 
 ```ruby[] 
 # con símbolos 
-propietariosPiso2 = {:a => "Juan Pérez", :b => "Romino Soto", :c => "Gastón Ramírez"} 
+propietariosPiso2 = {:a => "Juan Pérez", :b => "Romina Soto", :c => "Gastón Ramírez"} 
 
 plantilla = "El propietario del depto. B del 2do Piso es %s"
 printf plantilla, propietariosPiso2[:b]
@@ -110,7 +117,7 @@ printf plantilla, propietariosPiso2[:b]
 Ejemplo con strings: 
 ```ruby[] 
 # con strings  
-propietariosPiso2 = {"a" => "Juan Pérez", "b" => "Romino Soto", "c" => "Gastón Ramírez"} 
+propietariosPiso2 = {"a" => "Juan Pérez", "b" => "Romina Soto", "c" => "Gastón Ramírez"} 
 
 plantilla = "El propietario del depto. B del 2do Piso es %s"
 printf plantilla, propietariosPiso2["b"]
@@ -122,7 +129,7 @@ printf plantilla, propietariosPiso2["b"]
 
 Ejemplo con números: 
 ```ruby[] 
-cumpleanos = {1980 => "Gonzalo", 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
+cumpleanos = {1980 => ["Gonzalo"], 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
 
 cumpleanos.each do |anno, cumpleaneros|
     cumpleaneros.each do |cumpleanero|
@@ -178,6 +185,14 @@ En 1987 está de cumple Pedro
 En 1988 está de cumple Romina 
 =end 
 ```
+
+---
+## [Ejercicio 1](#)
+Genere las estructuras de datos para los días de la semana (Lunes .. Domingo) y para los meses (Enero .. Diciembre) que le permita traducir fácilmente los formatos de fecha. 
+
+Genere una aplicación que muestra el mes y día de la semana en formato textual de la fecha entregada por el usuario (español NO inglés):
+
+Ejemplo: El 18 de Diciembre del 2021 fue Sábado.
 				    </textarea>
 				</section>
 			</div>
