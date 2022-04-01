@@ -16,28 +16,132 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="^---$" data-separator-vertical="^===$" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Loops
+### Fechas 
 [Santiago Neira ](#)
+
 ---
-## [Loops](#)
+## [Fechas](#)
+- Principalmente se trabajan en Ruby con las clase [Time](#) 
+- Necesita importar 'time':
+```ruby[] 
+require 'time' 
+```
+- Los temas principales a tratar son: 
+	* Creación  
+	* Parseo 
+	* Aritmética 
+	* Formateo
+
+---
+## [Creación](#)
 
 ```ruby[] 
+fechaHoraActual = Time.now
+
+# new(año, mes, dia, hora, minuto, segundo)
+marzo31_0830hrs = Time.new(2022, 3, 31, 8, 30, 1)
+marzo30         = Time.new(2022, 3, 30) # => 2022-03-30 00:00:00 -0300
+marzo1          = Time.new(2022, 3) # => 2022-03-01 00:00:00 -0300
+enero1          = Time.new(2022) # => 2022-01-01 00:00:00 -0300
+```
+
+---
+## [Formateo: strftime()](#)
+
+```ruby[] 
+require 'time' 
+
+ahora = Time.now 
+puts ahora.strftime('Ahora: %Y-%m-%d') # => "Ahora: 2022-04-01"
+puts ahora.strftime("son las: %I:%M %p") # => "son las: 08:18 AM"
+puts ahora.strftime("hoy es: %A") # => "hoy es: Friday"
+```
+Más info: https://rubyapi.org/3.1/o/time#method-i-strftime
+---
+## [Parseo](#)
+```ruby[] 
+require 'time' 
+
+# strptime(stringConFecha, formatoFecha)
+marzo30anno2022 = Time.strptime('2022-03-30', '%Y-%m-%d')
+marzo30anno2021 = Time.strptime('03-30-21', '%m-%d-%y')
+```
+Mas info en: 
+https://rubyapi.org/3.1/o/time#method-c-strptime
+
+===
+
+|%|Descripción|
+|-|-|
+|%H|Hora 00..23|
+|%I|Hora 01..12|
+|%d|Día 01..31|
+|%j|Día 001..366|
+|%m|Mes 01..12|
+|%M|Minuto 00..59|
+|%S|Segundo 00..59|
+
+Mas info en: 
+https://rubyapi.org/3.1/o/time#method-c-strptime
+---
+## [Aritmética](#)
+```ruby[] 
+marzo31_000000hrs = Time.new(2022,3,31)  
+# => 2022-03-31 00:00:00 -0300
+
+# suma 1 segundo 
+marzo31_000000hrs = marzo31 + 1      
+# => 2022-03-31 00:00:01 -0300
+
+# suma 1 minuto
+marzo31_000100 = marzo31 + (1*60) 
+# => 2022-03-31 00:01:00 -0300 
+
+# suma 1 hora 
+marzo31_000100 = marzo31 + (1*60*60) 
+# => 2022-03-31 00:01:00 -0300 
 
 ```
----
-## [Variables](#)
+
+===
+## [Aritmética Fechas (Date)](#)
+```ruby[] 
+require 'time'
+require 'date'
+
+hoy     = Date.today # puedo instanciar directamente 
+# Puedo convertir un objeto Time a Date 
+abril1  = Time.new(2022, 4, 1).to_date 
+marzo31 = abril1 - 1 # aritmética en días  
+
+otraFecha       = Time.new(2001, 9, 11).to_date 
+diasDiferencia  = abril1 - otraFecha 
+annosDiferencia = diasDiferencia/365  
+```
+Más info: https://rubyapi.org/3.1/o/date
 
 ---
-## [Constantes](#)
+## [Referencias](#)
+
+- https://rubyapi.org/3.1/o/datetime 
+- https://rubyapi.org/3.1/o/date
+- https://www.techotopia.com/index.php/Working_with_Dates_and_Times_in_Ruby 
 
 ---
-## [Operadores Aritméticos](#)
+## [Ejercicios](#) 
 
----
-## [Operadores de Asignación](#)
+===
+## [Ejercicio 1](#)
+
+Desarrolle una aplicación que calcule la edad. 
+
+Se requiere:
+- Usar consola interactiva 
+
+[Tiempo esperado:](#) 20-25 minutos 
 				    </textarea>
 				</section>
 			</div>
