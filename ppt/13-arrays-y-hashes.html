@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Loops - Introducción Programación Ruby</title>
+		<title>Hashes - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,28 +16,108 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="^---$" data-separator-vertical="^===$" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
-### Loops
+### Hashes 
 [Santiago Neira ](#)
+
 ---
-## [Loops](#)
+## [Hashes](#)
+- Son estructuras de datos [similares](#) a los [arrays](#)
+
+- Se destacan por la posibilidad de asignar una [clave](#) y un [valor](#) 
+
+---
+## [Sintaxis Hashes](#)
+Sintaxis: 
+```ruby[] 
+listado = {clave1 => valor1, clave2 => valor2} 
+```
+Ejemplo: 
+```ruby[] 
+# con símbolos 
+propietariosPiso2 = {:a => "Juan Pérez", :b => "Romino Soto", :c => "Gastón Ramírez"} 
+
+plantilla = "El propietario del depto. B del 2do Piso es %s"
+printf plantilla, propietariosPiso2[:b]
+# => "El propietario del depto. B del 2do Piso es Romino Soto"
+```
+
+===
+## [Sintaxis Hashes](#)
+
+Ejemplo con strings: 
+```ruby[] 
+# con strings  
+propietariosPiso2 = {"a" => "Juan Pérez", "b" => "Romino Soto", "c" => "Gastón Ramírez"} 
+
+plantilla = "El propietario del depto. B del 2do Piso es %s"
+printf plantilla, propietariosPiso2["b"]
+# => "El propietario del depto. B del 2do Piso es Romino Soto"
+```
+
+===
+## [Sintaxis Hashes](#)
+
+Ejemplo con números: 
+```ruby[] 
+cumpleanos = {1980 => "Gonzalo", 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
+
+cumpleanos.each do |anno, cumpleaneros|
+    cumpleaneros.each do |cumpleanero|
+        plantilla = "En %d está de cumple %s \n"
+        printf plantilla, anno, cumpleanero 
+    end 
+end 
+=begin 
+En 1980 está de cumple Gonzalo 
+En 1987 está de cumple Juan   
+En 1987 está de cumple Pedro  
+En 1988 está de cumple Romina 
+=end 
+```
+
+---
+## [Recorrer Hashes](#)
+Sintaxis: 
+```ruby[] 
+variableTipoHash.each do |clave, valor|
+    
+end 
+```
+
+Ejemplo: 
+```ruby[] 
+propietariosPiso2 = {"a" => "Juan Pérez", "b" => "Romino Soto", "c" => "Gastón Ramírez"} 
+
+propietariosPiso2.each do |letraDepto, propietario|
+    puts "#{letraDepto} = #{propietario}"
+end 
+# a = Juan Pérez
+# b = Romino Soto   
+# c = Gastón Ramírez
+```
+
+===
+## [Estructuras Anidadas](#)
 
 ```ruby[] 
+cumpleanos = {1980 => ["Gonzalo"], 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
 
+cumpleanos.each do |anno, cumpleaneros|
+    cumpleaneros.each do |cumpleanero|
+        plantilla = "En %d está de cumple %s \n"
+        printf plantilla, anno, cumpleanero 
+    end 
+end 
+=begin 
+En 1980 está de cumple Gonzalo 
+En 1987 está de cumple Juan   
+En 1987 está de cumple Pedro  
+En 1988 está de cumple Romina 
+=end 
 ```
----
-## [Variables](#)
-
----
-## [Constantes](#)
-
----
-## [Operadores Aritméticos](#)
-
----
-## [Operadores de Asignación](#)
 				    </textarea>
 				</section>
 			</div>
