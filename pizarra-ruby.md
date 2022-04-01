@@ -1,26 +1,16 @@
 # INTRODUCCION A RUBY
 
-Miércoles 
-2022-03-31
-
-## Actividades 
-
-1. Diapositiva 3 - Copie el ejemplo de uso de clases en Ruby y ejecute en su computador. Luego haga las modificaciones que estime pertinente en el código y comente o discuta sus dudas. 
-
-2. Desarrollo Ejercicio 1 - Diapositiva 4 - PPT Programación Orientada a Objetos 
-
-3. Desarrollo Ejercicio 2 - En clases o para la casa - (Requiere investigación) 
+Viernes 
+2022-04-01 
 
 ## Breaks 
-
-1. De 10:54 a 11:09
+1.
 2. 
 
 ## Para hoy 
-- Repaso 
-- Programación Orientada a Objetos 
-- Require Keyword 
-- UML 
+
+- Trabajo con fechas 
+- Arrays y Hashes 
 
 ## Trabajos
 
@@ -76,6 +66,29 @@ Miércoles
 [X] Trabajo con archivos 
 
 [] Llamada APIs en Internet 
+
+--------------------- 
+Jueves 
+2022-03-31
+
+## Actividades 
+
+1. Diapositiva 3 - Copie el ejemplo de uso de clases en Ruby y ejecute en su computador. Luego haga las modificaciones que estime pertinente en el código y comente o discuta sus dudas. 
+
+2. Desarrollo Ejercicio 1 - Diapositiva 4 - PPT Programación Orientada a Objetos 
+
+3. Desarrollo Ejercicio 2 - En clases o para la casa - (Requiere investigación) 
+
+## Breaks 
+
+1. De 10:54 a 11:09
+2. 
+
+## Para hoy 
+- Repaso 
+- Programación Orientada a Objetos 
+- Require Keyword 
+- UML 
 
 --------------------- 
 Miércoles 
