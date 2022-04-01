@@ -4,8 +4,7 @@ Viernes
 2022-04-01 
 
 ## Breaks 
-1.
-2. 
+1. 11:05 hasta 11:35 hrs 
 
 ## Para hoy 
 
@@ -51,13 +50,13 @@ Viernes
 
 [X] Apps de Consola 
 
-[] Profundización sobre Arrays 
+[X] Profundización sobre Arrays 
 
-[] Hashes 
+[X] Hashes 
 
 [X] Métodos  
 
-[] Alcance de variables 
+[X] Alcance de variables 
 
 [X] Programación Orientada a Objetos 
 
@@ -65,7 +64,7 @@ Viernes
 
 [X] Trabajo con archivos 
 
-[] Llamada APIs en Internet 
+[] Llamada APIs en Internet  
 
 --------------------- 
 Jueves 

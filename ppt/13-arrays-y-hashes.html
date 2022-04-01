@@ -129,20 +129,15 @@ printf plantilla, propietariosPiso2["b"]
 
 Ejemplo con números: 
 ```ruby[] 
-cumpleanos = {1980 => ["Gonzalo"], 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
+nacimientos = {1980 => ["Gonzalo"], 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
 
-cumpleanos.each do |anno, cumpleaneros|
-    cumpleaneros.each do |cumpleanero|
-        plantilla = "En %d está de cumple %s \n"
-        printf plantilla, anno, cumpleanero 
+nacimientos.each do |anno, personas|
+    personas.each do |persona|
+        plantilla = "En el año %d nació %s \n"
+        printf plantilla, anno, persona  
     end 
 end 
-=begin 
-En 1980 está de cumple Gonzalo 
-En 1987 está de cumple Juan   
-En 1987 está de cumple Pedro  
-En 1988 está de cumple Romina 
-=end 
+
 ```
 
 ---
@@ -170,20 +165,14 @@ end
 ## [Estructuras Anidadas](#)
 
 ```ruby[] 
-cumpleanos = {1980 => ["Gonzalo"], 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
+nacimientos = {1980 => ["Gonzalo"], 1987 => ["Juan", "Pedro"], 1988 => ["Romina"]}
 
-cumpleanos.each do |anno, cumpleaneros|
-    cumpleaneros.each do |cumpleanero|
-        plantilla = "En %d está de cumple %s \n"
-        printf plantilla, anno, cumpleanero 
+nacimiento.each do |anno, personas|
+    personas.each do |persona|
+        plantilla = "En el año %d nació %s \n"
+        printf plantilla, anno, persona  
     end 
 end 
-=begin 
-En 1980 está de cumple Gonzalo 
-En 1987 está de cumple Juan   
-En 1987 está de cumple Pedro  
-En 1988 está de cumple Romina 
-=end 
 ```
 
 ---
