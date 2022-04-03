@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Introducción Programación Ruby - XXX</title>
+		<title>Consumir Web Services - Introducción Programación Ruby</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css" integrity="sha512-e3dnmFe5hH2bJx1MvUU3PFToGVQ2xykp/VGERCkuh4lTGMJ5QuxKFRIwix8DfnfkavwJiL6rehb9e1d6mFLwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,16 +16,92 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-separator="---" data-markdown data-line-numbers>
+				<section data-separator="^---$" data-separator-vertical="^===$" data-markdown data-line-numbers>
     				<textarea data-template>
 ## [Introducción a la Programación en Ruby](#)
+### Consumir Web Services  
+[Santiago Neira ](#)
 
-Santiago Neira 
 ---
-## [Contenidos](#)
+## [Que es una API](#)
 
-Documentación Oficial de la API de Ruby:
-https://docs.ruby-lang.org/
+---
+## [Que es una Web Services (WS)](#)
+
+---
+## [Diferencias entre API y WS](#)
+
+---
+## [Protocolos y Formatos](#)
+
+===
+## [HTTP](#)
+
+===
+## [JSON](#)
+
+===
+## [XML](#)
+
+---
+## [Consumir WS JSON](#)
+- En este caso utilizaremos las librerías internas de Ruby ***json*** y ***open-uri***
+```ruby 
+require 'json'
+require 'open-uri'
+```
+- [***json***](#) nos permite trabajar con el formato JSON 
+
+- y [***open-uri***](#) nos permite traer la respuesta de una URL en internet 
+
+===
+## [WS a Consumir](#)
+https://jsonplaceholder.typicode.com/comments?postId=1
+
+```json[] 
+[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+  },
+  {
+    "postId": 1,
+    "id": 2,
+    "name": "quo vero reiciendis velit similique earum",
+    "email": "Jayne_Kuhic@sydney.com",
+    "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+  },
+  ... 
+]
+```
+
+===
+## [Ejemplo](#)
+
+```ruby[] 
+require 'json'
+require 'open-uri'
+
+url = 'https://jsonplaceholder.typicode.com/comments?postId=1'
+
+# https://rubyapi.org/3.1/o/stringio
+comentariosStr = URI.open( url ).string 
+
+# array con hashes por cada indice
+comentarios = JSON.parse( comentariosStr )
+
+comentarios.each do |comentario| 
+    tema   = comentario["name"]
+    cuerpo = comentario["body"]
+    email  = comentario["email"]
+    puts "Email: #{email} \nTema: #{tema} \nComentario: #{cuerpo} \n\n"
+end 
+```
+
+
 				    </textarea>
 				</section>
 			</div>

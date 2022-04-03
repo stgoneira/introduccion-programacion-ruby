@@ -1,0 +1,18 @@
+@startjson
+[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "Maldita inflación",
+    "email": "reclamon@123.cl",
+    "body": "Está todo muy caro, voy a plantar mi propio huerta!!!"
+  },
+  {
+    "postId": 1,
+    "id": 2,
+    "name": "El culpable es ...",
+    "email": "elcupador@hotmail.com",
+    "body": "La culpa de todo es de XXXXX!!!"
+  }
+]
+@endjson
