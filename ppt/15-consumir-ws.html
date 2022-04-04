@@ -24,24 +24,155 @@
 
 ---
 ## [Que es una API](#)
+- Es una sigla en inglés que se Refiere a [**A**](#)plication [**P**](#)rogramming [**I**](#)nterface 
+- Es palabras simples es el lugar donde [2 o más componentes](#), sistemas, actores u otro elemento [interactúa](#) 
+- Es una forma de [contrato](#) de cómo funcionará la interacción 
+
+===
+<!-- .slide: data-background-iframe="https://docs.ruby-lang.org/en/3.1/Kernel.html" -->
+## [Ejemplo API Ruby Kernel](#)
+
+===
+## [Ejemplo API](#)
+
+![API WS](https://drek4537l1klr.cloudfront.net/geewax3/v-5/Figures/image004.jpg)
+
+===
+## [Ejemplo API](#)
+
+![API WS](https://drek4537l1klr.cloudfront.net/geewax3/Figures/01-02.png)
 
 ---
-## [Que es una Web Services (WS)](#)
+## [Que es un Web Services (WS)](#)
+- Es una [API](#) disponible sobre la [Web](#) 
+
+- Actualmente los 2 tipos de Web Services más difundidos son:
+	* [RESTful](#) Web Services 
+	* [SOAP](#) Web Services 
+
+===
+## [RESTful WS](#)
+- La sigla significa [Representational State Transfer](#) y es un estilo de arquitectura 
+
+- Totalmente basado en protocolo [HTTP](#) 
+
+- El formato de intercambio más utilizado es [JSON](#), pero también puedes utilizar otros como XML o texto plano.
+
+- Utiliza los [métodos HTTP](#) para dar significado a los mensajes:
+	* GET 
+	* POST 
+	* PUT 
+	* DELETE 
+
+===
+## [RESTful WS](#)
+
+![RESTful WS](https://gocoding.org/wp-content/uploads/2019/06/Restful-Web-Services.png)
+
+===
+## [RESTful HTTP Methods](#)
+
+![HTTP Methods](https://www.edureka.co/blog/wp-content/uploads/2019/06/CRUD-Operations-What-is-REST-API-Edureka-1.png) <!-- .element: style="background: white;" -->
+
+===
+## [SOAP](#)
+
+- SOAP está fuertemente basado en [XML](#) para su funcionamiento 
+
+- Soporta [varios protocolos](#) para su comunicación 
+
+- Los servicios web se describen usando [WSDL](#) (Web Services Description Language). 
+
+===
+## [RESTful vs SOAP](#)
+
+- SOAP fue más popular en un inicio 
+
+- Pero con el tiempo RESTful WS fue ganando terreno por ser más liviano y rápido de implementar 
+
+- Actualmente ambos son soportados ampliamente en los lenguajes de programación 
 
 ---
 ## [Diferencias entre API y WS](#)
+- Los Web Services son APIs sobre internet 
 
+- Pero las APIs NO necesariamente son Web Services 
+
+===
+## [Lectura para Profundización](#)
+
+https://livebook.manning.com/book/api-design-patterns/chapter-1/v-5/12
 ---
 ## [Protocolos y Formatos](#)
+- Protocolos: 
+	* HTTP(S)	
+	* SMTP 
+	* JMS 
+
+- Formatos: 
+	* JSON 
+	* XML	
 
 ===
 ## [HTTP](#)
 
+- Es un [protocolo](#) sobre [internet](#) 
+
+- Permite sistemas distribuidos, colaborativos e hipermedia (gráficos, audios, videos, texto, entre otros)
+
+- HTTP representa a sus [recursos](#) a través de [URIs](#) con esquemas HTTP o HTTPS 
+
+- Estos recursos son invocados a través de distintos [métodos: GET, POST, PUT, DELETE](#) 
+
 ===
 ## [JSON](#)
 
+- La sigla JSON significa [Javascript Object Notation](#)
+
+- Es un [formato ligero de intercambio de datos](#) 
+
+- Es de fácil lectura, escritura y manipulación por parte de humanos y máquinas 
+
+===
+## [Ejemplo JSON](#)
+
+```json[] 
+{
+	"menu": {
+		"id": "file",
+		"value": "File",
+		"popup": {
+			"menuitem": [
+				{"value": "New", "onclick": "CreateNewDoc()"},
+				{"value": "Open", "onclick": "OpenDoc()"},
+				{"value": "Close", "onclick": "CloseDoc()"}
+			]
+		}
+	}
+}
+```
+
 ===
 ## [XML](#)
+
+- Su sigla significa [eXtensible Markup Language](#)
+
+- Como su nombre lo indica, es un formato extensible que usa etiquetas en su sintaxis 
+
+- Es un formato estándar y ampliamente usados para el intercambio de datos 
+
+===
+## [Ejemplo XML](#)
+Compare con JSON:
+```xml[] 
+<menu id="file" value="File">
+	<popup>
+		<menuitem value="New" onclick="CreateNewDoc()" />
+		<menuitem value="Open" onclick="OpenDoc()" />
+		<menuitem value="Close" onclick="CloseDoc()" />
+	</popup>
+</menu>
+```
 
 ---
 ## [Consumir WS JSON](#)
@@ -77,6 +208,10 @@ https://jsonplaceholder.typicode.com/comments?postId=1
   ... 
 ]
 ```
+===
+## [Estructura del JSON](#)
+
+![superclase](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://stgoneira.github.io/introduccion-programacion-ruby/json/comentarios.puml)
 
 ===
 ## [Ejemplo](#)
