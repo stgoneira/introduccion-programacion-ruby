@@ -1,18 +1,15 @@
 require 'json'
 require 'open-uri'
 
-url = 'https://jsonplaceholder.typicode.com/comments?postId=1'
+url = 'https://mindicador.cl/api'
 
 # https://rubyapi.org/3.1/o/stringio
-comentariosStr = URI.open( url ).string 
+indicadoresStr = URI.open( url ).string 
 
 # array con hashes por cada indice
-comentarios = JSON.parse( comentariosStr )
+indicadores = JSON.parse( indicadoresStr )
 
-comentarios.each do |comentario| 
-    tema   = comentario["name"]
-    cuerpo = comentario["body"]
-    email  = comentario["email"]
-    puts "Email: #{email} \nTema: #{tema} \nComentario: #{cuerpo} \n\n"
-end 
-
+puts "La UF del día es #{ indicadores["uf"]["valor"] }"
+puts "El dólar observado del día es #{ indicadores["dolar"]["valor"] }"
+puts "El valor del Euro es #{ indicadores["euro"]["valor"] }"
+puts "El valor de la UTM es #{ indicadores["utm"]["valor"] }"
