@@ -1,5 +1,5 @@
 archivos    = Dir.entries(".")
-noDeseados  = [".", "..", "makeindex.rb"]
+noDeseados  = [".", "..", "README.md", "makeindex.rb"]
 ppts        = archivos - noDeseados
 baseUrl     = "https://stgoneira.github.io/introduccion-programacion-ruby/ppt/"
 
