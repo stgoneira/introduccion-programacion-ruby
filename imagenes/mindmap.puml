@@ -1,0 +1,30 @@
+@startmindmap 
+*[#Orange] Fundamentos
+**[#Lime] Variables 
+***[#DarkCyan] Tipos de Datos  
+****[#Coral] Textos
+****[#Coral] Números 
+****[#Coral] Booleanos  
+****[#Coral] Contenedores  
+*****[#DarkViolet] Arrays
+*****[#DarkViolet] Hashes 
+****[#Coral] Fechas  
+***[#DarkCyan] Alcance   
+**[#Lime] Condicionales 
+***[#DarkCyan] if else 
+***[#DarkCyan] unless 
+***[#DarkCyan] case       
+**[#Lime] Bucles (Loops)
+***[#DarkCyan] while 
+***[#DarkCyan] loop     
+***[#DarkCyan] upto 
+***[#DarkCyan] step 
+***[#DarkCyan] each         
+**[#Lime] POO  
+***[#DarkCyan] Clases 
+***[#DarkCyan] Métodos  
+****[#Coral] Parámetros 
+***[#DarkCyan] Herencia  
+**[#Lime] Exceptions  
+**[#Lime] Comentarios 
+@endmindmap 

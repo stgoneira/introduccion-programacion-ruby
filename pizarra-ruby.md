@@ -1,20 +1,24 @@
 # INTRODUCCION A RUBY
 
-Viernes 
-2022-04-01 
-
-## Breaks 
-1. 11:05 hasta 11:35 hrs 
+Lunes 
+2022-04-04 
 
 ## Para hoy 
 
-- Trabajo con fechas 
-- Arrays y Hashes 
+- Llamadas a Web Services 
+- Resolución de dudas 
+- Revisión de Trabajos Finales 
+
+## Breaks 
+1. de 10:59 hasta 11:14 
+2.
 
 ## Trabajos
 
 1. Evidencia Portafolio Módulo 6 (22-28/03) - Ejercicios en clases 
+
 2. Evidencia Portafolio Módulo 6 (29/03-04/04) - Ejercicios en clases 
+
 3. Evaluación Portafolio Módulo 6 - M6_Ejercicio.docx - Conversión Temperatura exportado a .docx 
 
 
@@ -64,7 +68,19 @@ Viernes
 
 [X] Trabajo con archivos 
 
-[] Llamada APIs en Internet  
+[X] Llamada APIs en Internet  
+
+--------------------- 
+Viernes 
+2022-04-01 
+
+## Breaks 
+1. 11:05 hasta 11:35 hrs 
+
+## Para hoy 
+
+- Trabajo con fechas 
+- Arrays y Hashes 
 
 --------------------- 
 Jueves 
