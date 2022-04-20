@@ -16,5 +16,6 @@
 - [14-metodos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/14-metodos.html) 
 - [14-orientacion-objetos.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/14-orientacion-objetos.html) 
 - [15-consumir-ws.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/15-consumir-ws.html) 
+- [16-exceptions.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/16-exceptions.html) 
 - [A-debugging-aternative.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/A-debugging-aternative.html) 
 - [A-debugging.html](https://stgoneira.github.io/introduccion-programacion-ruby/ppt/A-debugging.html) 
