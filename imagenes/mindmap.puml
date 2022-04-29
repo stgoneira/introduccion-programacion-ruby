@@ -22,8 +22,9 @@
 ***[#DarkCyan] each         
 **[#Lime] POO  
 ***[#DarkCyan] Clases 
-***[#DarkCyan] Métodos  
-****[#Coral] Parámetros 
+****[#Coral] Métodos
+*****[#DarkViolet] Parámetros 
+****[#Coral] Atributos 
 ***[#DarkCyan] Herencia  
 **[#Lime] Exceptions  
 **[#Lime] Comentarios 
