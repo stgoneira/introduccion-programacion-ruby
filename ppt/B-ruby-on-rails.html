@@ -69,6 +69,77 @@ gem uninstall tzinfo-data
 bundle install 
 ```
 
+---
+https://guides.rubyonrails.org/v6.1/association_basics.html
+https://guides.rubyonrails.org/v6.1/form_helpers.html
+
+
+Cuando el nombre de la columna no coincide con la tabla: 
+´´´ruby[] 
+class CreateEmployees < ActiveRecord::Migration[6.0]
+  def change
+    create_table :employees do |t|
+      t.references :manager, foreign_key: { to_table: :employees }
+      t.timestamps
+    end
+  end
+end
+´´´
+
+´´´ruby[]
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.irregular 'categoria', 'categorias'
+  inflect.irregular 'producto', 'productos'
+  inflect.irregular 'usuario', 'usuarios'
+end
+´´´
+
+´´´ruby[] 
+class CreateProductos < ActiveRecord::Migration[6.1]
+  def change
+    create_table :productos do |t|
+      t.string :nombre, null:false 
+      t.float :precio, null:false 
+      t.references :categoria, null: false, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end
+´´´
+
+´´´ruby[] 
+<div class="field">
+  <%= form.label :categoria_id %>
+  <%= form.collection_select :categoria_id, Categoria.order(:nombre), :id, :nombre %>
+</div>
+´´´
+
+´´´ruby[] 
+class ProductosController < ApplicationController
+  before_action :set_producto, only: %i[ show edit update destroy ]
+  before_action :set_categorias, only: %i[ new edit ]
+
+  # ...
+
+  # ...
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_producto
+      @producto = Producto.find(params[:id])
+    end
+
+    def set_categorias 
+      @categorias = Categoria.all 
+    end 
+
+    # Only allow a list of trusted parameters through.
+    def producto_params
+      params.require(:producto).permit(:nombre, :precio, :categoria_id)
+    end
+end 
+´´´
+
 				    </textarea>
 				</section>
 			</div>
