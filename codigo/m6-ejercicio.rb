@@ -23,7 +23,14 @@ end
 def generarDocx(nombreArchivo, texto)
     require 'caracal' 
     Caracal::Document.save(nombreArchivo) do |docx|
-        docx.p texto 
+        t=''
+        texto.each_char { |c| 
+        t+=c
+        if c=="\n"
+            docx.p t
+            t=''
+        end
+        } 
     end 
 end 
 
